@@ -1,0 +1,933 @@
+/* ---------------Estilos universales---------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+.colorFondo{
+    background-color: rgb(0, 0, 0);
+    background-image: radial-gradient(circle, #313131, #292929, #212121, #191919, #111111, #0c0c0c, #060606, #000000, #000000, #000000, #000000, #000000);
+}
+
+
+header{
+    height: 350px;
+    width: 100%;
+    background-image: url(../Html/fotologo.jpg);
+    background-size: auto;
+    background-position: center;
+}
+
+.tituloSecundario{
+    color: rgb(254, 237, 3);
+    text-shadow: 6px 6px 6px black;
+    font-size: 40px;
+    text-align: center;
+    background-color: transparent;
+    text-transform: capitalize;
+    padding-top: 150px;
+}
+.navegacion{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    background-color: transparent;
+    justify-content: end;
+    padding-top: 40px;
+}
+
+.navegacion ul li{
+    list-style: none;
+    display: flex;
+    padding-left: 25px;
+}
+.navegacion ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.navegacion a:hover{
+    color: rgb(255, 251, 0);
+    
+}
+.subtitulo{
+    text-align: center;
+    color: yellow;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px black;
+}
+.footerUniversal{
+    background-color:transparent;
+    height: 230px;
+    width: 100%;
+    margin-top: -25px;
+    overflow: auto;
+    display: flex;
+}
+
+.fa-brands.fa-facebook{
+    font-size: 30px;
+}
+.fa-brands.fa-instagram{
+    font-size: 30px;
+}
+.fa-brands.fa-whatsapp-square{
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+.whatsapp{
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    transition: 0.5s;
+    
+}
+.whatsapp:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+.contacto{
+    margin-top: 10px;
+    display: block;
+    height: 200px;
+    width: 100%;
+    justify-content: left;
+    margin-left: 20px;
+}
+.mapa{
+    margin-top: 10px;
+    display: block;
+    justify-content: right;
+    height: 200px;
+    width: 100%;
+}
+
+/*------------------------ Estilos index inicio ---------------------------*/
+.titulo{
+    color: rgb(0, 0, 0);
+    text-shadow: 6px 6px 6px;
+    font-size: 40px;
+    text-align: center;
+    background-color: transparent;
+    text-transform: capitalize;
+    padding-top: 150px;
+    text-decoration: overline underline;
+    
+}
+span{
+    font-size: 40px;
+    background-color: transparent;
+    color: yellow;
+}
+
+
+.textoIndex{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.contenedorImagen1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+.fotoFondo2{
+    display: inline-block;
+    background-position: center;
+    width: 700px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.seccionTwo h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: yellow;
+}
+
+.contenedorImagen2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+}
+.fotoPrincipal{
+    display: flex;
+    width: 500px;
+    height: 100%;
+    border-radius: 5px;
+}
+.mainIndex {  display: grid;
+    grid-template-columns: 0.2fr 1.9fr 1.7fr 0.2fr;
+    grid-template-rows: 1.1fr 0.9fr;
+    gap: 66px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". seccionOne seccionOne ."
+    ". seccionTwo seccionTwo .";
+    width: 100%;   
+}
+.seccionOne {  display: grid;
+    grid-template-columns: 1.3fr 0.8fr;
+    grid-template-rows: 1fr 1.fr;
+    gap: 20px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "subtitulo subtitulo"
+    "fotoFondo2 textoIndex";
+    grid-area: seccionOne;
+}
+
+.subtitulo {
+    justify-self: center;
+    align-self: center;
+    grid-area: subtitulo;
+}
+
+.fotoFondo2 { grid-area: fotoFondo2; }
+
+.textoIndex { grid-area: textoIndex; }
+
+.seccionTwo {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 24px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "subTituloIndex"
+    "fotoPrincipal";
+    grid-area: seccionTwo;
+}
+
+.subTituloIndex {
+    justify-self: center;
+    align-self: center;
+    grid-area: subTituloIndex;
+}
+
+.fotoPrincipal {
+    justify-self: center;
+    grid-area: fotoPrincipal;
+}
+
+/*------------------- Estilos index fin--------------------- */
+
+/* ------------------Estilos Categoria inicio--------------- */
+
+.contenedorTabla{
+    margin: 100px auto;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    
+}
+.tabla{
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    
+}
+th, td{
+    border: solid 3px rgb(255, 255, 255);
+    padding: 10px;
+    background-color: black;
+}
+.mainCategorias {  display: grid;
+    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr 2.6fr;
+    gap: 12px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". textoCategorias ."
+    ". subtitulo ."
+    ". contenedorTabla .";
+}
+
+.textoCategorias {
+    justify-self: stretch;
+    align-self: center;
+    grid-area: textoCategorias;
+}
+
+.subtitulo {
+    justify-self: center;
+    align-self: center;
+    grid-area: subtitulo;
+}
+
+.contenedorTabla { grid-area: contenedorTabla; }
+
+
+/*------------------ Estilos Categoria Fin------------------- */
+
+/* ----------------- Estilos Tutoriales inicio--------------- */
+
+.mainTutoriales h3{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.mainTutoriales h4{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.mainTutoriales p{
+    margin-left: 20px;
+}
+.contenedorTrago1{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.trago1{
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.trago1:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+.contenedorTrago2{
+    height: 500px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.trago2{
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.trago2:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.contenedorTrago3{
+    height: 500px;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+.trago3{
+    transition: 0.5s;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.trago3:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+.mainTutoriales {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    grid-template-rows: 0.2fr 0.2fr 2.5fr 0.2fr 2.5fr 0.2fr 3.4fr;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "subtitulo subtitulo"
+    "nombreTrago1 nombreTrago1"
+    "conteText1 contenedorTrago1"
+    "nombreTrago2 nombreTrago2"
+    "contenedorTrago2 conteText2"
+    "nombreTrago3 nombreTrago3"
+    "conteText3 contenedorTrago3";
+    
+    
+}
+
+.subtitulo {
+    justify-self: center;
+    grid-area: subtitulo;
+    text-shadow: 2px 2px 2px rgb(72, 71, 71);
+}
+
+.nombreTrago1 { grid-area: nombreTrago1;
+}
+
+.conteText1 { grid-area: conteText1;
+    
+}
+
+.contenedorTrago1 { grid-area: contenedorTrago1;
+}
+
+.nombreTrago2 { grid-area: nombreTrago2; }
+
+.conteText2 {
+    justify-self: center;
+    grid-area: conteText2;
+}
+
+.contenedorTrago2 { grid-area: contenedorTrago2; }
+
+.nombreTrago3 { grid-area: nombreTrago3; }
+
+.conteText3 { grid-area: conteText3; }
+
+.contenedorTrago3 { grid-area: contenedorTrago3; }
+
+
+
+/* ----------------- Estilos Tutoriales fin------------------- */
+
+/* ----------------- Estilos Tip inicio   -------------------- */
+
+.mainTips h3{
+font-size: 25px;
+margin-left: 50px;
+margin-bottom: 15px;
+margin-top: 15px;
+text-decoration: underline;
+}
+.fotoAnecdota{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.videoTips{
+    width: 400px;
+    height: 400px;
+}
+.mainTips{  display: grid;
+    grid-template-columns: 0.2fr 4.2fr 0.2fr;
+    grid-template-rows: 0.2fr 0.3fr 0.2fr 2.4fr 0.3fr 2.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". contexto ."
+    ". textoTips1 ."
+    ". experiencias ."
+    ". exp ."
+    ". textAnecdotas ."
+    ". anecdotas .";
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.contexto {
+    justify-self: center;
+    align-self: center;
+    grid-area: contexto;
+}
+
+.textoTips1 { grid-area: textoTips1; }
+
+.experiencias {
+    justify-self: center;
+    grid-area: experiencias;
+}
+
+.exp {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "textoTips2 contenedorTips1";
+    grid-area: exp;
+}
+
+.contenedorTips1 { grid-area: contenedorTips1; }
+
+.textoTips2 { grid-area: textoTips2; }
+
+.textAnecdotas {
+    justify-self: center;
+    align-self: center;
+    grid-area: textAnecdotas;
+}
+
+.anecdotas {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 36px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "textotips3 contenedorTips2";
+    grid-area: anecdotas;
+}
+
+.contenedorTips2 { grid-area: contenedorTips2; }
+
+.textotips3 {
+    
+    grid-area: textotips3;
+}
+
+
+/* ----------------- Estilos Tip fin   ----------------------- */
+
+/* ----------------- Estilos Contactos inicio   ----------------------- */
+
+.mainContactos h3{
+    text-align: center;
+    text-decoration: underline ;
+
+}
+.contenedorFormulario{
+display: flex;
+justify-content: center;
+width: 100%;
+height: 800px;
+}
+.formulario{
+    background-color: transparent;
+    margin: 30px auto;
+    width: 800px;
+    height: 400px;
+}
+legend{
+    color:yellow;
+    margin: 30px auto;   
+}
+
+.formLetras{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: auto;
+}
+.textArea{
+display: block;
+margin: auto;
+color: black;
+}
+.bottom{
+    display: inline-block;
+    margin: auto;
+    color:rgb(0, 0, 0);
+    border: solid 2px wh;
+}
+/* ----------------- Estilos Contactos Fin   ----------------------- */
+
+
+/* ---------- Media Queries ------------- */
+
+
+/* ------index------------ */
+
+@media screen and (max-width: 1366px) {
+}
+@media (max-width: 1024px) {
+    .mainIndex {  display: grid;
+        grid-template-columns: 0.2fr 1fr 0.2fr 0.2fr;
+        grid-template-rows: 0.3fr 0.3fr;
+        gap: 6px 3px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        ". seccionOne seccionOne ."
+        ". seccionTwo seccionTwo .";
+        width: 100%;   
+    }
+    .seccionOne {  display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.3fr 1fr;
+        gap: 10px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "subtitulo "
+        "fotoFondo2 "
+        "textoIndex ";
+        grid-area: seccionOne;
+    }
+    
+    .subtitulo {
+        justify-self: center;
+        align-self: center;
+        grid-area: subtitulo;
+    }
+    
+    .fotoFondo2 { grid-area: fotoFondo2;
+        justify-self: center;
+        align-self: center; }
+    
+    .textoIndex { grid-area: textoIndex; }
+    
+    .seccionTwo {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 1.8fr;
+        gap: 4px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "subTituloIndex"
+        "fotoPrincipal";
+        grid-area: seccionTwo;
+    }
+    .subTituloIndex {
+        justify-self: center;
+        align-self: center;
+        grid-area: subTituloIndex;
+    }
+    
+    .fotoPrincipal {
+        justify-self: center;
+        grid-area: fotoPrincipal;
+    }
+    .fotoFondo2{
+        display: inline-block;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    .contenedorImagen1{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    span{
+        font-size: 30px;
+    }
+    .fotoFondo2{
+        display: inline-block;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .contacto h3{
+        font-size: 15px;
+    }
+    .contacto h4{
+        font-size: 15px;
+    }
+    .mapa h4{
+        font-size: 15px;
+    }
+    .mapa1{
+        width: 170px;
+        height: 130px;
+    }
+    .fa-brands {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 620px){
+    .contenedorImagen1{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 260px;
+        
+    }
+    .fotoPrincipal{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        object-fit: contain;
+        
+    }
+    .fotoFondo2{
+        display: inline-block;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: unset;
+    }
+}
+
+@media (max-width: 420px){
+    .navegacion ul li a{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .subtitulo{
+        font-size: 20px;
+    }
+    .seccionTwo h2{
+        font-size: 20px;
+    }
+    .textoIndex{
+        font-size: 16px;
+    }
+    .contenedorImagen1{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+    }
+
+    .seccionOne {  display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.1fr 0.2fr;
+        gap: 2px 2px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "subtitulo "
+        "fotoFondo2 "
+        "textoIndex ";
+        grid-area: seccionOne;
+    }
+    
+    
+}
+
+
+/* ------------categorias-------------- */
+
+@media (max-width: 620px){
+
+    .tituloSecundario{
+        font-size: 30px;
+    }
+    .textoCategorias{
+        font-size: 16px;
+    }
+    .mainCategorias h2{
+        font-size: 20px;
+    }
+    th, td{
+        border: solid 1px rgb(255, 255, 255);
+        padding: 3px;
+        background-color: black;
+        font-size: 15px;
+        width: 200px;
+    }
+    .contenedorTabla{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* --------Tutoriales----- */
+
+@media (max-width: 1024px){
+    
+    .mainTutoriales {  
+        display: grid;
+        grid-template-columns: 1fr ;
+        width: 90%;
+        grid-template-rows: 0.2fr 0.1fr 0.3fr 1fr 0.1fr 0.3fr 1fr 0.1fr 0.3fr 0.5fr;
+        gap: 5px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "subtitulo "
+        "nombreTrago1 "
+        "conteText1 "
+        "contenedorTrago1 "
+        "nombreTrago2 "
+        "conteText2 "
+        "contenedorTrago2 "
+        "nombreTrago3 "
+        "conteText3"
+        "contenedorTrago3 ";
+        
+        
+    }
+    
+    .subtitulo {
+        justify-self: center;
+        grid-area: subtitulo;
+        text-shadow: 2px 2px 2px rgb(72, 71, 71);
+    }
+    
+    .nombreTrago1 { grid-area: nombreTrago1;
+    }
+    
+    .conteText1 { grid-area: conteText1;
+        
+    }
+    
+    .contenedorTrago1 { grid-area: contenedorTrago1;
+    }
+    
+    .nombreTrago2 { grid-area: nombreTrago2; }
+    
+    .conteText2 {
+        justify-self: center;
+        grid-area: conteText2;
+    }
+    .contenedorTrago2 { grid-area: contenedorTrago2; }
+    
+    .nombreTrago3 { grid-area: nombreTrago3; }
+    
+    .conteText3 { grid-area: conteText3; }
+    
+    .contenedorTrago3 { grid-area: contenedorTrago3; }
+}
+
+@media (max-width: 430px){
+    
+    .mainTutoriales h3{
+        font-size: 18px;
+    }
+    .mainTutoriales h4{
+        font-size: 16px;
+    }
+    .mainTutoriales p{
+        font-size: 14px;
+    }
+    .contenedorTrago1{
+        height: 200px;
+        width: 200px;
+    }
+    .contenedorTrago2{
+        height: 200px;
+        width: 200px;
+    }
+    .contenedorTrago3{
+        height: 200px;
+        width: 200px;
+    }
+    
+}
+
+/* ------Tips----- */
+@media (max-width: 720px){
+
+    .tituloSecundario{
+        font-size: 30px;
+    }
+    .mainTips h3{
+        font-size: 20px;
+    }
+    .mainTips p{
+        font-size: 16px;
+    }
+    .exp {  display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        gap: 15px 15px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "textoTips2 "
+            "contenedorTips1";
+        grid-area: exp;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    .anecdotas {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "contenedorTips2"
+        "textotips3 ";
+        grid-area: anecdotas;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .contenedorTips2{
+        width: 100%;
+        height: 250px;
+    }
+    .contenedorTips1{
+        width: 300px;
+        height: 150px;
+        margin-bottom: 250px;
+        
+    }
+    
+    .videoTips{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .fotoAnecdota{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+/* -------contactos------ */
+
+@media (max-width: 1024px){
+
+    .contenedorFormulario{
+        width: 600px;
+        height: 600px;
+        margin: auto;
+        margin-bottom: 200px;
+    }
+    .formulario{
+        display: flex;
+        width: 100%;
+        height: 650px;
+        margin-bottom: 200px;
+        
+    }
+    .formSeccion{
+        width: 100%;
+        height: 100%;
+    }
+    .textArea{
+        width: 300px;
+        height: 250px;
+    }
+    .formLetras{
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom{
+        font-size: 15px;
+    }
+}
+@media (max-width: 620px){
+    .mainContactos h3{
+        font-size: 18px;
+
+    }
+    .contenedorFormulario{
+        width: 300px;
+        height: 600px;
+        margin: auto;
+        margin-bottom: 200px;
+    }
+    .formulario{
+        
+        display: flex;
+        width: 100%;
+        height: 560px;
+        margin-bottom: 200px;
+        
+    }
+    .formSeccion{
+        width: 100%;
+        height: 100%;
+    }
+    .textArea{
+        width: 220px;
+        height: 180px;
+        font-size: 16px;
+    }
+    .formLetras{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+}
+
+
