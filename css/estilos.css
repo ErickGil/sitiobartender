@@ -54,6 +54,10 @@ header{
     color: rgb(255, 251, 0);
     
 }
+.animate__animated.animate__slideInDown{
+    --animate-duration:1s
+}
+
 .subtitulo{
     text-align: center;
     color: yellow;
@@ -124,7 +128,9 @@ span{
     color: yellow;
 }
 
-
+.animate__animated.animate__fadeIn{
+    --animate-duration: 2.5s
+}
 .textoIndex{
     display: flex;
     align-items: center;
@@ -141,7 +147,7 @@ span{
     background-position: center;
     width: 700px;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .seccionTwo h2{
@@ -297,7 +303,7 @@ th, td{
     border-radius: 5px;
 }
 .trago1:hover{
-    transform:scale(1.1);
+    transform:scale(1.2);
     transition: 0.5s;
 }
 .contenedorTrago2{
@@ -312,7 +318,7 @@ th, td{
     border-radius: 5px;
 }
 .trago2:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: 0.5s;
 }
 .contenedorTrago3{
@@ -328,7 +334,7 @@ th, td{
     border-radius: 5px;
 }
 .trago3:hover{
-    transform:scale(1.1);
+    transform:scale(1.2);
     transition: 0.5s;
 }
 .mainTutoriales {  
