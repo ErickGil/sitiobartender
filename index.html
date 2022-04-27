@@ -1,67 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/estilos.css">
-    <title>Creatubartender</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/estilos.css">
+  <title>Creatubartender</title>
+
 </head>
 
 <body class="colorFondo">
   <header>
     <h1 class="titulo">Cocktail<span class="animate__animated animate__fadeIn">Magic</span></h1>
-      <nav class="navegacion">
-        <ul type="a">
-          <li><a class="animate__animated animate__slideInDown" href="index.html">Inicio</a></li>
-          <li><a class="animate__animated animate__slideInDown" href="Categorias.html">Categorias</a></li>
-          <li><a class="animate__animated animate__slideInDown" href="Tutoriales.html">Tutoriales</a></li>
-          <li><a class="animate__animated animate__slideInDown" href="Tips.html">Tips</a></li>
-          <li><a class="animate__animated animate__slideInDown" href="Contactos.html">Contactos</a></li>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" ></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Categorias.html">Categorias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tutoriales.html">Tutoriales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tips.html">Tips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contactos.html">Contactos</a>
+          </li>
         </ul>
-      </nav>
+      </div>
+    </nav>
   </header>
-      <br>
-  
+
   <main class="mainIndex">
     <section class="seccionOne">
       <h2 class="subtitulo">Inicio</h2>
-        <div class="contenedorImagen1">
-          <img src="img tragos/fotofondo2.png" alt="foto1"  class="fotoFondo2" >
-        </div>
-        <p class="textoIndex">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa voluptatum eligendi pariatur esse consectetur necessitatibus dolorum suscipit fuga quis alias quae eaque, quidem nam debitis reprehenderit nihil architecto expedita.</p>
+      <div class="contenedorImagen1">
+        <img src="img tragos/fotofondo2.png" alt="foto1" class="fotoFondo2">
+      </div>
+      <p class="textoIndex">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa voluptatum
+        eligendi pariatur esse consectetur necessitatibus dolorum suscipit fuga quis alias quae eaque, quidem nam
+        debitis reprehenderit nihil architecto expedita.</p>
     </section>
-        <br>
+    <br>
     <section class="seccionTwo">
       <h2 class="subTituloIndex">Galeria</h2>
-        <div class="contenedorImagen2">
-          <img src="img tragos/fotofondo5.jpeg" alt="foto2" class="fotoPrincipal">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img tragos/fotofondo.png" alt="Preparando" class="fotofondo" >
+          </div>
+          <div class="carousel-item">
+            <img src="./img tragos/fotofondo3.png" alt="Sirviendo" class="fotofondo3" >
+          </div>
+          <div class="carousel-item">
+            <img src="./img tragos/fotofondo4.jpeg" alt="Preparando2" class="fotofondo4" >
+          </div>
+          <div class="carousel-item">
+            <img src="./img tragos/fotofondo5.png" alt="Preparando3" class="fotofondo5" >
+          </div>
         </div>
-      </section>
+        
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
   </main><br>
 
   <footer class="footerUniversal">
-    <div class="contacto"><h3>Medios de Contacto</h3><br>
-      <h4>Redes:   
-      </h4><br>
-        <div class="facebook">
-          <a href="https://www.facebook.com/flacopiriz" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
-        </div><br>
-        <div class="instragram">
-          <a href="https://www.instagram.com/emiipz/" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
-        </div>
-        <div class="whatsapp">
-          <a  href="https://api.whatsapp.com/send?phone=54351234567&text=Deja%20tu%20mensaje%20te%20atender%C3%A9%20ala%20brevedad" target="_blank"><i class="fa-brands fa-whatsapp-square" ></i></a>
-        </div>
-          <br>
-    </div>
-    <div class="mapa"><h4>Donde Trabajo:</h4><br>
-      <iframe class="mapa1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65152051.26644232!2d-83.36655376712154!3d4.67125308732111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329f61b2a02201%3A0x18478a75624eb596!2sSALMA%20-%20Drink&#39;s%20Gallery!5e0!3m2!1ses-419!2sar!4v1648083386023!5m2!1ses-419!2sar" width="300" height="130" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="mapa">
+        <iframe class="mapa1"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65152051.26644232!2d-83.36655376712154!3d4.67125308732111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329f61b2a02201%3A0x18478a75624eb596!2sSALMA%20-%20Drink&#39;s%20Gallery!5e0!3m2!1ses-419!2sar!4v1648083386023!5m2!1ses-419!2sar"
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="Redes">
+      <a href="https://www.facebook.com/flacopiriz" target="_blank"><img src="./img tragos/face.ico" alt="facebook" class="facebook"></i></a>
+      <a href="https://www.instagram.com/emiipz/" target="_blank"> <img src="./img tragos/insta.ico" alt="instagram" class="instagram"></a>
+      <a href="" target="_blank"> <img src="./img tragos/favicon.ico" alt="twitter" class="twitter"></a>
+      <a href="https://api.whatsapp.com/send?phone=54351234567&text=Deja%20tu%20mensaje%20te%20atender%C3%A9%20ala%20brevedad"
+          target="_blank"><img src="./img tragos/whats.ico" alt="whatsapp" class="whatsapp"></i></a>
+  </div>
+      <div class="container">   
+        <p class="textF">Esta pagina no se responsabiliza sobre el uso de sus recetas, ni incita al consumo de alcohol </p>
+      </div>
     </div>
   </footer>
 
 </body>
+
 </html>

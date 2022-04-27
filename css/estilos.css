@@ -1,28 +1,52 @@
 /* ---------------Estilos universales---------------- */
-*{
+* {
     margin: 0px;
     padding: 0px;
-    font-size: 20px;
     box-sizing: border-box;
     font-family: sans-serif;
     color: white;
 }
-.colorFondo{
+
+.colorFondo {
     background-color: rgb(0, 0, 0);
-    background-image: radial-gradient(circle, #313131, #292929, #212121, #191919, #111111, #0c0c0c, #060606, #000000, #000000, #000000, #000000, #000000);
+   
+}
+
+.navbar.navbar-expand-md.bg-dark.navbar-dark{
+    margin-top: 100px;
+    font-size: 20px;
+}
+.bg-dark{
+    background-color: transparent !important;
+}
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #212529;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    
+}
+.navbar-expand-md .navbar-collapse {
+    justify-content: flex-end;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #a56b00;
+    text-shadow: 5px 5px 5px black;
 }
 
 
-header{
+header {
     height: 350px;
     width: 100%;
     background-image: url(../img\ tragos/fotologo.jpg);
-    background-size: auto;
+    background-size: cover;
     background-position: center;
 }
 
-.tituloSecundario{
-    color: rgb(254, 237, 3);
+.tituloSecundario {
+    color: rgb(0, 0, 0);
     text-shadow: 6px 6px 6px black;
     font-size: 40px;
     text-align: center;
@@ -30,165 +54,143 @@ header{
     text-transform: capitalize;
     padding-top: 150px;
 }
-.navegacion{
-    width: 100%;
-    height: 25px;
-    display: flex;
-    background-color: transparent;
-    justify-content: end;
-    padding-top: 40px;
+
+.animate__animated.animate__slideInDown {
+    --animate-duration: 1s
 }
 
-.navegacion ul li{
-    list-style: none;
-    display: flex;
-    padding-left: 25px;
-}
-.navegacion ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    margin-right: 5px;
-}
-.navegacion a:hover{
-    color: rgb(255, 251, 0);
-    
-}
-.animate__animated.animate__slideInDown{
-    --animate-duration:1s
-}
-
-.subtitulo{
+.subtitulo {
     text-align: center;
-    color: yellow;
+    color: rgb(255, 255, 255);
     font-size: 30px;
     text-shadow: 3px 3px 3px black;
 }
-.footerUniversal{
-    background-color:transparent;
-    height: 230px;
-    width: 100%;
-    margin-top: -25px;
-    overflow: auto;
-    display: flex;
-}
 
-.fa-brands.fa-facebook{
-    font-size: 30px;
+.jumbotron{
+    background-color: #838383;
+    padding: 2rem 1rem;
+    height: 250px;
 }
-.fa-brands.fa-instagram{
-    font-size: 30px;
+.textF{
+    text-align: center;
 }
-.fa-brands.fa-whatsapp-square{
-    font-size: 35px;
-    padding-bottom: 50px;
-}
-.whatsapp{
-    position: fixed;
-    bottom: -50px;
-    right: 20px;
-    transition: 0.5s;
+.Redes{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
     
 }
-.whatsapp:hover{
-    transform: scale(1.2);
-    transition: all 0.5s;
+
+img.facebook{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
 }
-.contacto{
-    margin-top: 10px;
-    display: block;
-    height: 200px;
-    width: 100%;
-    justify-content: left;
-    margin-left: 20px;
+img.instagram{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
 }
-.mapa{
-    margin-top: 10px;
-    display: block;
-    justify-content: right;
-    height: 200px;
+img.twitter{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+img.whatsapp{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+
+
+
+.mapa {
+    
+    display: flex;
+    justify-content: center;
+    height: 100px;
     width: 100%;
 }
 
 /*------------------------ Estilos index inicio ---------------------------*/
-.titulo{
+.titulo {
     color: rgb(0, 0, 0);
-    text-shadow: 6px 6px 6px;
+    text-shadow: 6px 6px 6px orange;
     font-size: 40px;
     text-align: center;
     background-color: transparent;
     text-transform: capitalize;
     padding-top: 150px;
-    text-decoration: overline underline;
     
-}
-span{
-    font-size: 40px;
-    background-color: transparent;
-    color: yellow;
+
 }
 
-.animate__animated.animate__fadeIn{
+span {
+    font-size: 40px;
+    background-color: transparent;
+    color: #000000;
+}
+
+.animate__animated.animate__fadeIn {
     --animate-duration: 2.5s
 }
-.textoIndex{
+
+.textoIndex {
     display: flex;
     align-items: center;
     text-align: center;
 }
-.contenedorImagen1{
+
+.contenedorImagen1 {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 500px;
+    width: 90%;
+    height: 600px;
 }
-.fotoFondo2{
+
+.fotoFondo2 {
     display: inline-block;
     background-position: center;
-    width: 700px;
+    width: 100%;
     height: 100%;
     border-radius: 5px;
 }
 
-.seccionTwo h2{
+.seccionTwo h2 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: yellow;
+    color: rgb(255, 255, 255);
 }
 
-.contenedorImagen2{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 500px;
-    margin-bottom: 20px;
-}
-.fotoPrincipal{
-    display: flex;
-    width: 500px;
-    height: 100%;
-    border-radius: 5px;
-}
-.mainIndex {  display: grid;
+
+.mainIndex {
+    display: grid;
     grid-template-columns: 0.2fr 1.9fr 1.7fr 0.2fr;
     grid-template-rows: 1.1fr 0.9fr;
     gap: 66px 3px;
     grid-auto-flow: row;
     grid-template-areas:
-    ". seccionOne seccionOne ."
-    ". seccionTwo seccionTwo .";
-    width: 100%;   
+        ". seccionOne seccionOne ."
+        ". seccionTwo seccionTwo .";
+    width: 100%;
 }
-.seccionOne {  display: grid;
+main.mainIndex{
+    background-image: radial-gradient(circle, #605200, #5b3d0a, #4f2c12, #3d1e15, #271413, #1d0f10, #12080a, #000000, #000000, #000000, #000000, #000000);
+}
+
+.seccionOne {
+    display: grid;
     grid-template-columns: 1.3fr 0.8fr;
     grid-template-rows: 1fr 1.fr;
     gap: 20px 5px;
     grid-auto-flow: row;
     grid-template-areas:
-    "subtitulo subtitulo"
-    "fotoFondo2 textoIndex";
+        "subtitulo subtitulo"
+        "fotoFondo2 textoIndex";
     grid-area: seccionOne;
 }
 
@@ -198,18 +200,26 @@ span{
     grid-area: subtitulo;
 }
 
-.fotoFondo2 { grid-area: fotoFondo2; }
+.fotoFondo2 {
+    grid-area: fotoFondo2;
+}
 
-.textoIndex { grid-area: textoIndex; }
-
-.seccionTwo {  display: grid;
+.textoIndex {
+    grid-area: textoIndex;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 700px;
+}
+.seccionTwo {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1.8fr;
-    gap: 24px 0px;
+    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "subTituloIndex"
-    "fotoPrincipal";
+        "subTituloIndex"
+        "fotoPrincipal";
     grid-area: seccionTwo;
 }
 
@@ -218,44 +228,69 @@ span{
     align-self: center;
     grid-area: subTituloIndex;
 }
-
-.fotoPrincipal {
-    justify-self: center;
-    grid-area: fotoPrincipal;
+.fotofondo{
+    background-position: center;
+    width: 90%;
+    height: 700px;
+    object-fit: contain;
+}
+.fotofondo3{
+    background-position: center;
+    
+    width: 100%;
+    object-fit: contain;
+    
+}
+.fotofondo4{
+    background-position: center;
+    
+    width: 100%;
+    object-fit: contain;
+}
+.fotofondo5{
+    background-position: center;
+    
+    width: 100%;
+    object-fit: contain;
 }
 
 /*------------------- Estilos index fin--------------------- */
 
 /* ------------------Estilos Categoria inicio--------------- */
 
-.contenedorTabla{
+.contenedorTabla {
     margin: 100px auto;
     width: 100%;
     height: 500px;
     display: flex;
     justify-content: center;
-    
+
 }
-.tabla{
+
+.tabla {
     width: 400px;
     background-color: rgb(255, 255, 255);
     text-align: left;
-    
+
 }
-th, td{
+
+th,
+td {
     border: solid 3px rgb(255, 255, 255);
     padding: 10px;
     background-color: black;
 }
-.mainCategorias {  display: grid;
+
+.mainCategorias {
+    display: grid;
     grid-template-columns: 0.2fr 2.6fr 0.2fr;
     grid-template-rows: 0.2fr 0.2fr 2.6fr;
     gap: 12px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    ". textoCategorias ."
-    ". subtitulo ."
-    ". contenedorTabla .";
+        ". textoCategorias ."
+        ". subtitulo ."
+        ". contenedorTabla .";
 }
 
 .textoCategorias {
@@ -270,74 +305,88 @@ th, td{
     grid-area: subtitulo;
 }
 
-.contenedorTabla { grid-area: contenedorTabla; }
+.contenedorTabla {
+    grid-area: contenedorTabla;
+}
 
 
 /*------------------ Estilos Categoria Fin------------------- */
 
 /* ----------------- Estilos Tutoriales inicio--------------- */
 
-.mainTutoriales h3{
+.mainTutoriales h3 {
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
 }
-.mainTutoriales h4{
+
+.mainTutoriales h4 {
     font-size: 20px;
     margin-left: 40px;
     margin-bottom: 20px;
 }
-.mainTutoriales p{
+
+.mainTutoriales p {
     margin-left: 20px;
 }
-.contenedorTrago1{
+
+.contenedorTrago1 {
     width: 100%;
     height: 500px;
     margin-bottom: 20px;
     margin-left: 40px;
 }
-.trago1{
+
+.trago1 {
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
     border-radius: 5px;
 }
-.trago1:hover{
-    transform:scale(1.2);
+
+.trago1:hover {
+    transform: scale(1.2);
     transition: 0.5s;
 }
-.contenedorTrago2{
+
+.contenedorTrago2 {
     height: 500px;
     margin-bottom: 20px;
     margin-left: 40px;
 }
-.trago2{
+
+.trago2 {
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
     border-radius: 5px;
 }
-.trago2:hover{
+
+.trago2:hover {
     transform: scale(1.2);
     transition: 0.5s;
 }
-.contenedorTrago3{
+
+.contenedorTrago3 {
     height: 500px;
     width: 100%;
     margin-bottom: 40px;
     margin-left: 40px;
 }
-.trago3{
+
+.trago3 {
     transition: 0.5s;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
-.trago3:hover{
-    transform:scale(1.2);
+
+.trago3:hover {
+    transform: scale(1.2);
     transition: 0.5s;
 }
-.mainTutoriales {  
+
+.mainTutoriales {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 90%;
@@ -345,15 +394,15 @@ th, td{
     gap: 5px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "subtitulo subtitulo"
-    "nombreTrago1 nombreTrago1"
-    "conteText1 contenedorTrago1"
-    "nombreTrago2 nombreTrago2"
-    "contenedorTrago2 conteText2"
-    "nombreTrago3 nombreTrago3"
-    "conteText3 contenedorTrago3";
-    
-    
+        "subtitulo subtitulo"
+        "nombreTrago1 nombreTrago1"
+        "conteText1 contenedorTrago1"
+        "nombreTrago2 nombreTrago2"
+        "contenedorTrago2 conteText2"
+        "nombreTrago3 nombreTrago3"
+        "conteText3 contenedorTrago3";
+
+
 }
 
 .subtitulo {
@@ -362,30 +411,43 @@ th, td{
     text-shadow: 2px 2px 2px rgb(72, 71, 71);
 }
 
-.nombreTrago1 { grid-area: nombreTrago1;
+.nombreTrago1 {
+    grid-area: nombreTrago1;
 }
 
-.conteText1 { grid-area: conteText1;
-    
+.conteText1 {
+    grid-area: conteText1;
+
 }
 
-.contenedorTrago1 { grid-area: contenedorTrago1;
+.contenedorTrago1 {
+    grid-area: contenedorTrago1;
 }
 
-.nombreTrago2 { grid-area: nombreTrago2; }
+.nombreTrago2 {
+    grid-area: nombreTrago2;
+}
 
 .conteText2 {
     justify-self: center;
     grid-area: conteText2;
 }
 
-.contenedorTrago2 { grid-area: contenedorTrago2; }
+.contenedorTrago2 {
+    grid-area: contenedorTrago2;
+}
 
-.nombreTrago3 { grid-area: nombreTrago3; }
+.nombreTrago3 {
+    grid-area: nombreTrago3;
+}
 
-.conteText3 { grid-area: conteText3; }
+.conteText3 {
+    grid-area: conteText3;
+}
 
-.contenedorTrago3 { grid-area: contenedorTrago3; }
+.contenedorTrago3 {
+    grid-area: contenedorTrago3;
+}
 
 
 
@@ -393,34 +455,38 @@ th, td{
 
 /* ----------------- Estilos Tip inicio   -------------------- */
 
-.mainTips h3{
-font-size: 25px;
-margin-left: 50px;
-margin-bottom: 15px;
-margin-top: 15px;
-text-decoration: underline;
+.mainTips h3 {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-decoration: underline;
 }
-.fotoAnecdota{
+
+.fotoAnecdota {
     width: 100%;
     height: 400px;
     object-fit: contain;
 }
-.videoTips{
+
+.videoTips {
     width: 400px;
     height: 400px;
 }
-.mainTips{  display: grid;
+
+.mainTips {
+    display: grid;
     grid-template-columns: 0.2fr 4.2fr 0.2fr;
     grid-template-rows: 0.2fr 0.3fr 0.2fr 2.4fr 0.3fr 2.6fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    ". contexto ."
-    ". textoTips1 ."
-    ". experiencias ."
-    ". exp ."
-    ". textAnecdotas ."
-    ". anecdotas .";
+        ". contexto ."
+        ". textoTips1 ."
+        ". experiencias ."
+        ". exp ."
+        ". textAnecdotas ."
+        ". anecdotas .";
     margin-top: 20px;
     margin-bottom: 50px;
 }
@@ -431,14 +497,17 @@ text-decoration: underline;
     grid-area: contexto;
 }
 
-.textoTips1 { grid-area: textoTips1; }
+.textoTips1 {
+    grid-area: textoTips1;
+}
 
 .experiencias {
     justify-self: center;
     grid-area: experiencias;
 }
 
-.exp {  display: grid;
+.exp {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -448,9 +517,13 @@ text-decoration: underline;
     grid-area: exp;
 }
 
-.contenedorTips1 { grid-area: contenedorTips1; }
+.contenedorTips1 {
+    grid-area: contenedorTips1;
+}
 
-.textoTips2 { grid-area: textoTips2; }
+.textoTips2 {
+    grid-area: textoTips2;
+}
 
 .textAnecdotas {
     justify-self: center;
@@ -458,7 +531,8 @@ text-decoration: underline;
     grid-area: textAnecdotas;
 }
 
-.anecdotas {  display: grid;
+.anecdotas {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 36px;
@@ -468,10 +542,12 @@ text-decoration: underline;
     grid-area: anecdotas;
 }
 
-.contenedorTips2 { grid-area: contenedorTips2; }
+.contenedorTips2 {
+    grid-area: contenedorTips2;
+}
 
 .textotips3 {
-    
+
     grid-area: textotips3;
 }
 
@@ -480,44 +556,50 @@ text-decoration: underline;
 
 /* ----------------- Estilos Contactos inicio   ----------------------- */
 
-.mainContactos h3{
+.mainContactos h3 {
     text-align: center;
-    text-decoration: underline ;
+    text-decoration: underline;
 
 }
-.contenedorFormulario{
-display: flex;
-justify-content: center;
-width: 100%;
-height: 800px;
+
+.contenedorFormulario {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
 }
-.formulario{
+
+.formulario {
     background-color: transparent;
     margin: 30px auto;
     width: 800px;
     height: 400px;
 }
-legend{
-    color:yellow;
-    margin: 30px auto;   
+
+legend {
+    color: yellow;
+    margin: 30px auto;
 }
 
-.formLetras{
+.formLetras {
     text-align: center;
     color: rgb(0, 0, 0);
     margin: auto;
 }
-.textArea{
-display: block;
-margin: auto;
-color: black;
+
+.textArea {
+    display: block;
+    margin: auto;
+    color: black;
 }
-.bottom{
+
+.bottom {
     display: inline-block;
     margin: auto;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     border: solid 2px wh;
 }
+
 /* ----------------- Estilos Contactos Fin   ----------------------- */
 
 
@@ -526,198 +608,211 @@ color: black;
 
 /* ------index------------ */
 
-@media screen and (max-width: 1366px) {
-}
+@media screen and (max-width: 1366px) {}
+
 @media (max-width: 1024px) {
-    .mainIndex {  display: grid;
+    .mainIndex {
+        display: grid;
         grid-template-columns: 0.2fr 1fr 0.2fr 0.2fr;
         grid-template-rows: 0.3fr 0.3fr;
         gap: 6px 3px;
         grid-auto-flow: row;
         grid-template-areas:
-        ". seccionOne seccionOne ."
-        ". seccionTwo seccionTwo .";
-        width: 100%;   
+            ". seccionOne seccionOne ."
+            ". seccionTwo seccionTwo .";
+        width: 100%;
     }
-    .seccionOne {  display: grid;
-        grid-template-columns: 1fr ;
+
+    .seccionOne {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 1fr;
         gap: 10px 5px;
         grid-auto-flow: row;
         grid-template-areas:
-        "subtitulo "
-        "fotoFondo2 "
-        "textoIndex ";
+            "subtitulo "
+            "fotoFondo2 "
+            "textoIndex ";
         grid-area: seccionOne;
     }
-    
+
     .subtitulo {
         justify-self: center;
         align-self: center;
         grid-area: subtitulo;
     }
-    
-    .fotoFondo2 { grid-area: fotoFondo2;
+
+    .fotoFondo2 {
+        grid-area: fotoFondo2;
         justify-self: center;
-        align-self: center; }
-    
-    .textoIndex { grid-area: textoIndex; }
-    
-    .seccionTwo {  display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.6fr 1.8fr;
-        gap: 4px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "subTituloIndex"
-        "fotoPrincipal";
-        grid-area: seccionTwo;
+        align-self: center;
     }
+
+    .textoIndex {
+        grid-area: textoIndex;
+    }
+
     .subTituloIndex {
         justify-self: center;
         align-self: center;
         grid-area: subTituloIndex;
     }
-    
+
     .fotoPrincipal {
         justify-self: center;
         grid-area: fotoPrincipal;
     }
-    .fotoFondo2{
+
+    .fotoFondo2 {
         display: inline-block;
         background-position: center;
         width: 100%;
         height: 100%;
-        border-radius: 20px;
+        
         object-fit: cover;
     }
-    
+
 }
 
 
 @media (max-width: 768px) {
-    .contenedorImagen1{
+    .contenedorImagen1 {
         display: flex;
         justify-content: center;
         width: 100%;
         height: 400px;
     }
-    .titulo{
+
+    .titulo {
         font-size: 30px;
     }
-    span{
+
+    span {
         font-size: 30px;
     }
-    .fotoFondo2{
+
+    .fotoFondo2 {
         display: inline-block;
         background-position: center;
         width: 100%;
         height: 100%;
-        border-radius: 20px;
-        object-fit: cover;
+        background-size: contain;
+        
     }
-    .contacto h3{
-        font-size: 15px;
-    }
-    .contacto h4{
-        font-size: 15px;
-    }
-    .mapa h4{
-        font-size: 15px;
-    }
-    .mapa1{
-        width: 170px;
-        height: 130px;
-    }
-    .fa-brands {
-        font-size: 25px;
-    }
-}
 
-@media (max-width: 620px){
-    .contenedorImagen1{
+    .contacto h3 {
+        font-size: 15px;
+    }
+
+    .contacto h4 {
+        font-size: 15px;
+    }
+   
+}
+    
+    
+
+@media (max-width: 620px) {
+    .contenedorImagen1 {
         display: flex;
         justify-content: center;
         width: 100%;
         height: 260px;
-        
+
     }
-    .fotoPrincipal{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        border-radius: 15px;
-        object-fit: contain;
-        
-    }
-    .fotoFondo2{
-        display: inline-block;
+
+    .fotoFondo2 {
         background-position: center;
         width: 100%;
         height: 100%;
-        border-radius: 20px;
-        object-fit: unset;
+        background-size: cover;
     }
 }
 
-@media (max-width: 420px){
-    .navegacion ul li a{
-        margin-top: 5px;
-        font-size: 15px;
-    }
-    .subtitulo{
+@media (max-width: 420px) {
+
+    .subtitulo {
         font-size: 20px;
     }
-    .seccionTwo h2{
+
+    .seccionTwo h2 {
         font-size: 20px;
     }
-    .textoIndex{
+
+    .textoIndex {
         font-size: 16px;
     }
-    .contenedorImagen1{
+
+    .contenedorImagen1 {
         display: flex;
         justify-content: center;
         width: 100%;
         height: 200px;
     }
 
-    .seccionOne {  display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 0.1fr 0.2fr;
+    .seccionOne {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         gap: 2px 2px;
         grid-auto-flow: row;
         grid-template-areas:
-        "subtitulo "
-        "fotoFondo2 "
-        "textoIndex ";
+            "subtitulo "
+            "fotoFondo2 "
+            "textoIndex ";
         grid-area: seccionOne;
     }
+    img.facebook{
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+    img.instagram{
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+    img.twitter{
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+    img.whatsapp{
+        height: 20px;
+        width: 20px;;
+        margin-right: 10px;
+    }
     
-    
+
 }
 
 
 /* ------------categorias-------------- */
 
-@media (max-width: 620px){
+@media (max-width: 620px) {
 
-    .tituloSecundario{
+    .tituloSecundario {
         font-size: 30px;
     }
-    .textoCategorias{
+
+    .textoCategorias {
         font-size: 16px;
     }
-    .mainCategorias h2{
+
+    .mainCategorias h2 {
         font-size: 20px;
     }
-    th, td{
+
+    th,
+    td {
         border: solid 1px rgb(255, 255, 255);
         padding: 3px;
         background-color: black;
         font-size: 15px;
         width: 200px;
     }
-    .contenedorTabla{
+
+    .contenedorTabla {
         width: 300px;
         height: 300px;
         display: flex;
@@ -727,101 +822,124 @@ color: black;
 
 /* --------Tutoriales----- */
 
-@media (max-width: 1024px){
-    
-    .mainTutoriales {  
+@media (max-width: 1024px) {
+
+    .mainTutoriales {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         width: 90%;
         grid-template-rows: 0.2fr 0.1fr 0.3fr 1fr 0.1fr 0.3fr 1fr 0.1fr 0.3fr 0.5fr;
         gap: 5px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-        "subtitulo "
-        "nombreTrago1 "
-        "conteText1 "
-        "contenedorTrago1 "
-        "nombreTrago2 "
-        "conteText2 "
-        "contenedorTrago2 "
-        "nombreTrago3 "
-        "conteText3"
-        "contenedorTrago3 ";
-        
-        
+            "subtitulo "
+            "nombreTrago1 "
+            "conteText1 "
+            "contenedorTrago1 "
+            "nombreTrago2 "
+            "conteText2 "
+            "contenedorTrago2 "
+            "nombreTrago3 "
+            "conteText3"
+            "contenedorTrago3 ";
+
+
     }
-    
+
     .subtitulo {
         justify-self: center;
         grid-area: subtitulo;
         text-shadow: 2px 2px 2px rgb(72, 71, 71);
     }
-    
-    .nombreTrago1 { grid-area: nombreTrago1;
+
+    .nombreTrago1 {
+        grid-area: nombreTrago1;
     }
-    
-    .conteText1 { grid-area: conteText1;
-        
+
+    .conteText1 {
+        grid-area: conteText1;
+
     }
-    
-    .contenedorTrago1 { grid-area: contenedorTrago1;
+
+    .contenedorTrago1 {
+        grid-area: contenedorTrago1;
     }
-    
-    .nombreTrago2 { grid-area: nombreTrago2; }
-    
+
+    .nombreTrago2 {
+        grid-area: nombreTrago2;
+    }
+
     .conteText2 {
         justify-self: center;
         grid-area: conteText2;
     }
-    .contenedorTrago2 { grid-area: contenedorTrago2; }
-    
-    .nombreTrago3 { grid-area: nombreTrago3; }
-    
-    .conteText3 { grid-area: conteText3; }
-    
-    .contenedorTrago3 { grid-area: contenedorTrago3; }
+
+    .contenedorTrago2 {
+        grid-area: contenedorTrago2;
+    }
+
+    .nombreTrago3 {
+        grid-area: nombreTrago3;
+    }
+
+    .conteText3 {
+        grid-area: conteText3;
+    }
+
+    .contenedorTrago3 {
+        grid-area: contenedorTrago3;
+    }
 }
 
-@media (max-width: 430px){
-    
-    .mainTutoriales h3{
+@media (max-width: 430px) {
+
+    .mainTutoriales h3 {
         font-size: 18px;
     }
-    .mainTutoriales h4{
+
+    .mainTutoriales h4 {
         font-size: 16px;
     }
-    .mainTutoriales p{
+
+    .mainTutoriales p {
         font-size: 14px;
     }
-    .contenedorTrago1{
+
+    .contenedorTrago1 {
         height: 200px;
         width: 200px;
     }
-    .contenedorTrago2{
+
+    .contenedorTrago2 {
         height: 200px;
         width: 200px;
     }
-    .contenedorTrago3{
+
+    .contenedorTrago3 {
         height: 200px;
         width: 200px;
     }
-    
+
 }
 
 /* ------Tips----- */
-@media (max-width: 720px){
+@media (max-width: 720px) {
 
-    .tituloSecundario{
+    .tituloSecundario {
         font-size: 30px;
     }
-    .mainTips h3{
+
+    .mainTips h3 {
         font-size: 20px;
     }
-    .mainTips p{
+
+    .mainTips p {
         font-size: 16px;
     }
-    .exp {  display: grid;
-        grid-template-columns: 1fr ;
+
+    .exp {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         gap: 15px 15px;
         grid-auto-flow: row;
@@ -831,37 +949,41 @@ color: black;
         grid-area: exp;
         justify-items: center;
         align-items: center;
-        
+
     }
-    .anecdotas {  display: grid;
+
+    .anecdotas {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr;
         gap: 10px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-        "contenedorTips2"
-        "textotips3 ";
+            "contenedorTips2"
+            "textotips3 ";
         grid-area: anecdotas;
         margin-bottom: 10px;
         margin-top: 10px;
     }
-    .contenedorTips2{
+
+    .contenedorTips2 {
         width: 100%;
         height: 250px;
     }
-    .contenedorTips1{
+
+    .contenedorTips1 {
         width: 300px;
         height: 150px;
         margin-bottom: 250px;
-        
+
     }
-    
-    .videoTips{
+
+    .videoTips {
         width: 100%;
         justify-content: center;
     }
 
-    .fotoAnecdota{
+    .fotoAnecdota {
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -870,70 +992,79 @@ color: black;
 
 /* -------contactos------ */
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
-    .contenedorFormulario{
+    .contenedorFormulario {
         width: 600px;
         height: 600px;
         margin: auto;
         margin-bottom: 200px;
     }
-    .formulario{
+
+    .formulario {
         display: flex;
         width: 100%;
         height: 650px;
         margin-bottom: 200px;
-        
+
     }
-    .formSeccion{
+
+    .formSeccion {
         width: 100%;
         height: 100%;
     }
-    .textArea{
+
+    .textArea {
         width: 300px;
         height: 250px;
     }
-    .formLetras{
+
+    .formLetras {
         display: flex;
         flex-direction: column;
     }
-    .bottom{
+
+    .bottom {
         font-size: 15px;
     }
 }
-@media (max-width: 620px){
-    .mainContactos h3{
+
+@media (max-width: 620px) {
+    .mainContactos h3 {
         font-size: 18px;
 
     }
-    .contenedorFormulario{
+
+    .contenedorFormulario {
         width: 300px;
         height: 600px;
         margin: auto;
         margin-bottom: 200px;
     }
-    .formulario{
-        
+
+    .formulario {
+
         display: flex;
         width: 100%;
         height: 560px;
         margin-bottom: 200px;
-        
+
     }
-    .formSeccion{
+
+    .formSeccion {
         width: 100%;
         height: 100%;
     }
-    .textArea{
+
+    .textArea {
         width: 220px;
         height: 180px;
         font-size: 16px;
     }
-    .formLetras{
+
+    .formLetras {
         display: flex;
         flex-direction: column;
         font-size: 16px;
     }
 }
-
-
