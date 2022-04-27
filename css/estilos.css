@@ -11,12 +11,15 @@
     background-color: rgb(0, 0, 0);
 }
 
-.navbar.navbar-expand-md.bg-dark.navbar-dark{
+.navbar.navbar-expand-md.bg-dark.navbar-dark {
     font-size: 20px;
+    padding: 0 0 0 0;
 }
-.bg-dark{
+
+.bg-dark {
     background-color: transparent !important;
 }
+
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
@@ -24,11 +27,13 @@
     background-color: #212529;
     border: 1px solid transparent;
     border-radius: 0.25rem;
-    
+
 }
+
 .navbar-expand-md .navbar-collapse {
     justify-content: flex-end;
 }
+
 .navbar-dark .navbar-nav .nav-link {
     color: #c9a460;
     text-shadow: 5px 5px 5px black;
@@ -44,9 +49,9 @@ header {
 }
 
 .tituloSecundario {
-    color: rgb(0, 0, 0);
-    text-shadow: 6px 6px 6px black;
-    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 8px 8px 8px black;
+    font-size: 45px;
     text-align: center;
     background-color: transparent;
     text-transform: capitalize;
@@ -57,6 +62,11 @@ header {
     --animate-duration: 1s
 }
 
+main {
+    background-image: radial-gradient(circle, #605200, #5b3d0a, #4f2c12, #3d1e15, #271413, #1d0f10, #12080a, #000000, #000000, #000000, #000000, #000000);
+
+}
+
 .subtitulo {
     text-align: center;
     color: rgb(255, 255, 255);
@@ -64,37 +74,42 @@ header {
     text-shadow: 3px 3px 3px black;
 }
 
-.jumbotron{
-    background-color: #838383;
+.jumbotron {
+    background-color: #160f0f;
     padding: 2rem 1rem;
     height: 250px;
 }
-.textF{
+
+.textF {
     text-align: center;
 }
-.Redes{
+
+.Redes {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    
+
 }
 
-img.facebook{
+img.facebook {
     height: 40px;
     width: 40px;
     margin-right: 10px;
 }
-img.instagram{
+
+img.instagram {
     height: 40px;
     width: 40px;
     margin-right: 10px;
 }
-img.twitter{
+
+img.twitter {
     height: 40px;
     width: 40px;
     margin-right: 10px;
 }
-img.whatsapp{
+
+img.whatsapp {
     height: 40px;
     width: 40px;
     margin-right: 10px;
@@ -105,7 +120,7 @@ img.whatsapp{
 
 
 .mapa {
-    
+
     display: flex;
     justify-content: center;
     height: 100px;
@@ -116,14 +131,16 @@ img.whatsapp{
 .titulo {
     color: rgb(255, 255, 255);
     text-shadow: 6px 6px 6px orange;
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     background-color: transparent;
     text-transform: capitalize;
     padding-top: 150px;
-    
-
+    font-weight: 550;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
+
 
 span {
     font-size: 40px;
@@ -176,7 +193,8 @@ span {
         ". seccionTwo seccionTwo .";
     width: 100%;
 }
-main.mainIndex{
+
+main.mainIndex {
     background-image: radial-gradient(circle, #605200, #5b3d0a, #4f2c12, #3d1e15, #271413, #1d0f10, #12080a, #000000, #000000, #000000, #000000, #000000);
 }
 
@@ -205,10 +223,12 @@ main.mainIndex{
 .textoIndex {
     grid-area: textoIndex;
 }
+
 .carousel-inner img {
     width: 100%;
     height: 500px;
 }
+
 .seccionTwo {
     display: grid;
     grid-template-columns: 1fr;
@@ -226,28 +246,32 @@ main.mainIndex{
     align-self: center;
     grid-area: subTituloIndex;
 }
-.fotofondo{
+
+.fotofondo {
     background-position: center;
     width: 90%;
     height: 700px;
     object-fit: contain;
 }
-.fotofondo3{
+
+.fotofondo3 {
     background-position: center;
-    
+
     width: 100%;
     object-fit: contain;
-    
+
 }
-.fotofondo4{
+
+.fotofondo4 {
     background-position: center;
-    
+
     width: 100%;
     object-fit: contain;
 }
-.fotofondo5{
+
+.fotofondo5 {
     background-position: center;
-    
+
     width: 100%;
     object-fit: contain;
 }
@@ -257,31 +281,37 @@ main.mainIndex{
 /* ------------------Estilos Categoria inicio--------------- */
 
 .contenedorTabla {
-    margin: 100px auto;
-    width: 100%;
+	width: 100%;
     height: 500px;
     display: flex;
     justify-content: center;
-
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-.tabla {
-    width: 400px;
-    background-color: rgb(255, 255, 255);
-    text-align: left;
-
+table {
+	width: 600px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 th,
 td {
-    border: solid 3px rgb(255, 255, 255);
-    padding: 10px;
-    background-color: black;
+	padding: 5px;
+	background-color: rgba(90, 5, 5, 0.2);
+	color: #fff;
 }
+
+th {
+	text-align: left; 
+    background-color: #1d0f10;
+}
+
 
 .mainCategorias {
     display: grid;
-    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 0.2fr 2.6fr;
     gap: 12px 0px;
     grid-auto-flow: row;
@@ -292,7 +322,9 @@ td {
 }
 
 .textoCategorias {
-    justify-self: stretch;
+    margin-top: 20px ;
+    margin-right: 20px;
+    text-align: center;
     align-self: center;
     grid-area: textoCategorias;
 }
@@ -554,48 +586,226 @@ td {
 
 /* ----------------- Estilos Contactos inicio   ----------------------- */
 
-.mainContactos h3 {
-    text-align: center;
-    text-decoration: underline;
 
+
+
+button {
+    overflow: visible;
 }
 
-.contenedorFormulario {
-    display: flex;
-    justify-content: center;
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+    color: #ffffff;
+    font: inherit;
+    margin: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+#container {
+    border: solid 3px #ffffff;
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+}
+
+.contactosH1 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    border-bottom: solid 2px #ffffff;
+    margin: -0.512em auto;
+    width: 350px;
+}
+
+.icon_wrapper {
+    margin: 50px auto 0;
     width: 100%;
-    height: 800px;
 }
 
-.formulario {
-    background-color: transparent;
-    margin: 30px auto;
-    width: 800px;
-    height: 400px;
-}
-
-legend {
-    color: yellow;
-    margin: 30px auto;
-}
-
-.formLetras {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    margin: auto;
-}
-
-.textArea {
+.icon {
     display: block;
-    margin: auto;
-    color: black;
+    fill: #ffffff;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
 }
 
-.bottom {
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #ffffff;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+
+select::-ms-expand {
+    display: none;
+}
+
+.subject {
+    width: 100%;
+}
+
+.telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+:-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+#form_button {
+    background: none;
+    border: solid 2px #474544;
+    color: #ffffff;
+    cursor: pointer;
     display: inline-block;
-    margin: auto;
-    color: rgb(0, 0, 0);
-    border: solid 2px wh;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+    background: #474544;
+    color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        margin: 20px auto;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .underline {
+        width: 68px;
+    }
+
+    #form_button {
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .underline {
+        width: 53px;
+    }
+
+    input[type='text'],
+    [type='email'],
+    select,
+    textarea {
+        font-size: 0.875em;
+    }
 }
 
 /* ----------------- Estilos Contactos Fin   ----------------------- */
@@ -666,7 +876,7 @@ legend {
         background-position: center;
         width: 100%;
         height: 100%;
-        
+
         object-fit: cover;
     }
 
@@ -695,7 +905,7 @@ legend {
         width: 100%;
         height: 100%;
         background-size: contain;
-        
+
     }
 
     .contacto h3 {
@@ -705,10 +915,10 @@ legend {
     .contacto h4 {
         font-size: 15px;
     }
-   
+
 }
-    
-    
+
+
 
 @media (max-width: 620px) {
     .contenedorImagen1 {
@@ -725,6 +935,7 @@ legend {
         height: 100%;
         background-size: cover;
     }
+
     .carousel-inner img {
         width: 100%;
         height: 300px;
@@ -764,26 +975,32 @@ legend {
             "textoIndex ";
         grid-area: seccionOne;
     }
-    img.facebook{
+
+    img.facebook {
         height: 20px;
         width: 20px;
         margin-right: 10px;
     }
-    img.instagram{
+
+    img.instagram {
         height: 20px;
         width: 20px;
         margin-right: 10px;
     }
-    img.twitter{
+
+    img.twitter {
         height: 20px;
         width: 20px;
         margin-right: 10px;
     }
-    img.whatsapp{
+
+    img.whatsapp {
         height: 20px;
-        width: 20px;;
+        width: 20px;
+        ;
         margin-right: 10px;
     }
+
     .carousel-inner img {
         width: 100%;
         height: 250px;
@@ -808,21 +1025,34 @@ legend {
         font-size: 20px;
     }
 
-    th,
-    td {
-        border: solid 1px rgb(255, 255, 255);
-        padding: 3px;
-        background-color: black;
-        font-size: 15px;
-        width: 200px;
-    }
-
     .contenedorTabla {
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: 500px;
         display: flex;
         justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    
+    th,
+    td {
+        padding: 5px;
+        background-color: rgba(90, 5, 5, 0.2);
+        color: #fff;
+    }
+    
+    th {
+        text-align: left; 
+        background-color: #1d0f10;
+    }
+    
 }
 
 /* --------Tutoriales----- */
