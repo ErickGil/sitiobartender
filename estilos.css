@@ -1,313 +1,991 @@
 /* ---------------Estilos universales---------------- */
 * {
-    margin: 0px;
-    padding: 0px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    color: white;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
 }
 
 .colorFondo {
-    background-color: black;
+  background-color: #180707;
 }
 
 .navbar.navbar-expand-md.bg-dark.navbar-dark {
-    font-size: 20px;
-    padding: 0 0 0 0;
+  font-size: 20px;
+  padding: 0 0 0 0;
 }
 
 .bg-dark {
-    background-color: #000000 !important;
+  background-color: transparent !important;
 }
 
 .navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: #212529;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #212529;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
 }
 
 .navbar-expand-md .navbar-collapse {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #c9a460;
-    text-shadow: 5px 5px 5px black;
+  color: #c9a460;
+  text-shadow: 5px 5px 5px black;
 }
 
 header {
-    height: 350px;
-    width: 100%;
-    background-image: url(./imgTragos/fotologo.jpg);
-    background-size: cover;
-    background-position: center;
+  height: 350px;
+  width: 100%;
+  background-image: url(./imgTragos/fotologo.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 header .tituloSecundario {
-    color: white;
-    text-shadow: 8px 8px 8px black;
-    font-size: 45px;
-    text-align: center;
-    background-color: transparent;
-    text-transform: capitalize;
-    padding-top: 150px;
+  color: white;
+  text-shadow: 0px 0px 5px #c6d30b;
+  font-size: 45px;
+  text-align: center;
+  background-color: transparent;
+  text-transform: capitalize;
+  padding-top: 150px;
 }
 
 header .animate__animated.animate__slideInDown {
-    --animate-duration: 1s;
+  --animate-duration: 1s;
 }
 
 main {
-    background-image: radial-gradient(circle, #605200, #5b3d0a, #4f2c12, #3d1e15, #271413, #1d0f10, #12080a, #000000, #000000, #000000, #000000, #000000);
+  background-image: radial-gradient(circle, #605200, #5b3d0a, #4f2c12, #3d1e15, #271413, #1d0f10, #12080a, #000000, #000000, #000000, #000000, #000000);
 }
 
 main .subtitulo {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    text-shadow: 3px 3px 3px black;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px black;
+}
+
+main p,
+main .mainIndex .seccionOne .textoIndex,
+.mainIndex .seccionOne main .textoIndex {
+  text-align: justify;
+  padding: 5px;
 }
 
 footer .jumbotron {
-    background-color: #160f0f;
-    padding: 2rem 1rem;
-    height: 250px;
+  background-color: #160f0f;
+  padding: 2rem 1rem;
+  height: 250px;
 }
 
 footer .jumbotron .mapa {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    height: 100px;
-    width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
 }
 
 footer .jumbotron .Redes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 footer .jumbotron .Redes img.facebook {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
 }
 
 footer .jumbotron .Redes img.instagram {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
 }
 
 footer .jumbotron .Redes img.twitter {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
 }
 
 footer .jumbotron .Redes img.whatsapp {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
 }
 
 footer .textF {
-    text-align: center;
+  text-align: center;
 }
 
 /*------------------------ Estilos index inicio ---------------------------*/
 .titulo {
-    color: white;
-    text-shadow: 6px 6px 6px orange;
-    font-size: 35px;
-    text-align: center;
-    background-color: transparent;
-    text-transform: capitalize;
-    padding-top: 150px;
-    font-weight: 550;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+  color: white;
+  text-shadow: 6px 6px 6px orange;
+  font-size: 35px;
+  text-align: center;
+  background-color: transparent;
+  text-transform: capitalize;
+  padding-top: 150px;
+  font-weight: 550;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .titulo span {
-    font-size: 40px;
-    background-color: transparent;
-    color: #000000;
+  font-size: 40px;
+  background-color: transparent;
+  color: #000000;
 }
 
 .animate__animated.animate__fadeIn {
-    --animate-duration: 2.5s;
+  --animate-duration: 2.5s;
 }
 
 .mainIndex {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0.2fr 1.9fr 1.7fr 0.2fr;
-    grid-template-columns: 0.2fr 1.9fr 1.7fr 0.2fr;
-    -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 3px;
-    grid-auto-flow: row;
-    grid-template-areas: ". seccionOne seccionOne ."
-        ". seccionTwo seccionTwo .";
-    width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 1.9fr 1.7fr 0.2fr;
+  grid-template-columns: 0.2fr 1.9fr 1.7fr 0.2fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 3px;
+  grid-auto-flow: row;
+  grid-template-areas: ". seccionOne seccionOne ."
+    ". seccionTwo seccionTwo .";
+  width: 100%;
 }
 
 .mainIndex .seccionOne {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1.3fr 0.8fr;
-    grid-template-columns: 1.3fr 0.8fr;
-    -ms-grid-rows: 0.3fr 1fr;
-    grid-template-rows: 0.3fr 1fr;
-    gap: 20px 5px;
-    grid-auto-flow: row;
-    grid-template-areas: "subtitulo subtitulo"
-        "fotoFondo2 textoIndex";
-    -ms-grid-column-span: 2;
-    grid-area: seccionOne;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.3fr 0.8fr;
+  grid-template-columns: 1.3fr 0.8fr;
+  -ms-grid-rows: 0.3fr 1fr;
+  grid-template-rows: 0.3fr 1fr;
+  gap: 20px 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "subtitulo subtitulo"
+    "fotoFondo2 textoIndex";
+  -ms-grid-column-span: 2;
+  grid-area: seccionOne;
 }
 
 .mainIndex .seccionOne .contenedorImagen1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 90%;
-    height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
 }
 
 .mainIndex .seccionOne .contenedorImagen1 .fotoFondo2 {
-    display: inline-block;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+  display: inline-block;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 
 .mainIndex .seccionOne .subtitulo {
-    -ms-grid-column-align: center;
-    justify-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    
-    -ms-grid-column-span: 2;
-    grid-area: subtitulo;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-span: 2;
+  grid-area: subtitulo;
+  margin-top: 70px;
+  margin-bottom: 60px;
+  text-shadow: 0px 0px 5px #c6d30b;
 }
 
 .mainIndex .seccionOne .textoIndex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .mainIndex .seccionTwo {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    -ms-grid-rows: 0.2fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "subTituloIndex"
-        "fotoPrincipal";
-    
-    -ms-grid-column-span: 2;
-    grid-area: seccionTwo;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 0.2fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "subTituloIndex"
+    "fotoPrincipal";
+  -ms-grid-column-span: 2;
+  grid-area: seccionTwo;
+  margin-bottom: 30px;
 }
 
 .mainIndex .seccionTwo .seccionTwo h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
 }
 
 .mainIndex .seccionTwo .subTituloIndex {
-    -ms-grid-column-align: center;
-    justify-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  text-shadow: 0px 0px 5px #c6d30b;
 }
 
 .mainIndex .seccionTwo .carousel-inner img {
-    width: 100%;
-    height: 500px;
+  width: 100%;
+  height: 500px;
 }
 
 .mainIndex .seccionTwo .fotofondo {
-    background-position: center;
-    width: 100%;
-    height: 700px;
-    -o-object-fit: contain;
-    object-fit: contain;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .mainIndex .seccionTwo .fotofondo3 {
-    background-position: center;
-    width: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
+  background-position: center;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .mainIndex .seccionTwo .fotofondo4 {
-    background-position: center;
-    width: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
+  background-position: center;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .mainIndex .seccionTwo .fotofondo5 {
-    background-position: center;
-    width: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
+  background-position: center;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 /*------------------- Estilos index fin--------------------- */
 /* ------------------Estilos Categoria inicio--------------- */
 .mainCategorias .subtitulo {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  text-shadow: 0px 0px 5px #c6d30b;
+}
+
+.mainCategorias .textoCategorias {
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.mainCategorias .contenedorTabla {
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+.mainCategorias .contenedorTabla table {
+  width: 600px;
+  border-collapse: collapse;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.mainCategorias .contenedorTabla table tr th {
+  text-align: center;
+  background-color: #1d0f10;
+}
+
+.mainCategorias .contenedorTabla table tr td {
+  padding: 5px;
+  background-color: rgba(90, 5, 5, 0.2);
+  color: #fff;
+  text-align: center;
+}
+
+/*------------------ Estilos Categoria Fin------------------- */
+/* ----------------- Estilos Tutoriales inicio--------------- */
+.mainTutoriales .subtitulo {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  text-shadow: 0px 0px 5px #c6d30b;
+  margin-bottom: 60px;
+  padding-top: 70px;
+}
+
+.mainTutoriales h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.mainTutoriales h4 {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.mainTutoriales p,
+.mainTutoriales .mainIndex .seccionOne .textoIndex,
+.mainIndex .seccionOne .mainTutoriales .textoIndex {
+  margin-left: 20px;
+}
+
+.mainTutoriales .container {
+  width: 100%;
+}
+
+.mainTutoriales .container .card-title {
+  color: #000000;
+}
+
+.mainTutoriales .container .card-text {
+  color: #000000;
+}
+
+.mainTutoriales .container .card {
+  background-color: #633224;
+  width: 100%;
+}
+
+.mainTutoriales .container .card-img-top {
+  width: 100%;
+}
+
+.mainTutoriales .container .ingredientesSub {
+  text-align: left;
+}
+
+.mainTutoriales .container .lista {
+  text-align: left;
+}
+
+/* ----------------- Estilos Tutoriales fin------------------- */
+/* ----------------- Estilos Tip inicio   -------------------- */
+.mainTips {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 4.2fr 0.2fr;
+  grid-template-columns: 0.2fr 4.2fr 0.2fr;
+  -ms-grid-rows: 0.2fr 0.3fr 0.2fr 2.4fr 0.3fr 2.6fr;
+  grid-template-rows: 0.2fr 0.3fr 0.2fr 2.4fr 0.3fr 2.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". contexto ."
+    ". textoTips1 ."
+    ". experiencias ."
+    ". exp ."
+    ". textAnecdotas ."
+    ". anecdotas .";
+  margin-bottom: 50px;
+}
+
+.mainTips h3 {
+  font-size: 25px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-decoration: underline;
+  text-shadow: 0 0 5px black;
+}
+
+.mainTips .contexto {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  grid-area: contexto;
+  font-size: 30px;
+  text-shadow: 0px 0px 5px #c6d30b;
+  text-decoration: none;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.mainTips .textoTips1 {
+  grid-area: textoTips1;
+}
+
+.mainTips .experiencias {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  grid-area: experiencias;
+  margin-bottom: 50px;
+}
+
+.mainTips .exp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "textoTips2 contenedorTips1";
+  grid-area: exp;
+}
+
+.mainTips .exp .contenedorTips1 {
+  grid-area: contenedorTips1;
+}
+
+.mainTips .exp .contenedorTips1 .videoTips {
+  width: 400px;
+  height: 400px;
+}
+
+.mainTips .exp .contenedorTips1 .textoTips2 {
+  grid-area: textoTips2;
+}
+
+.mainTips .textAnecdotas {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  grid-area: textAnecdotas;
+  margin-bottom: 50px;
+}
+
+.mainTips .anecdotas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1.5fr;
+  grid-template-rows: 1.5fr;
+  gap: 0px 36px;
+  grid-auto-flow: row;
+  grid-template-areas: "textotips3 contenedorTips2";
+  grid-area: anecdotas;
+  margin-bottom: 30px;
+}
+
+.mainTips .anecdotas .contenedorTips2 {
+  grid-area: contenedorTips2;
+}
+
+.mainTips .anecdotas .contenedorTips2 .fotoAnecdota {
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.mainTips .anecdotas .contenedorTips2 .textotips3 {
+
+  grid-area: textotips3;
+}
+
+/* ----------------- Estilos Tip fin   ----------------------- */
+/* ----------------- Estilos Contactos inicio   ----------------------- */
+.mainContactos #container {
+  border: solid 3px #ffffff;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.mainContactos #container .contactosH1 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mainContactos #container .underline {
+  border-bottom: solid 2px #ffffff;
+  margin: -0.512em auto;
+  width: 350px;
+}
+
+.mainContactos #container .icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.mainContactos #container .icon_wrapper .icon {
+  display: block;
+  fill: #ffffff;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.mainContactos #container form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+.mainContactos #container form button {
+  overflow: visible;
+}
+
+.mainContactos #container form button,
+.mainContactos #container form select {
+  text-transform: none;
+}
+
+.mainContactos #container form button,
+.mainContactos #container form input,
+.mainContactos #container form select,
+.mainContactos #container form textarea {
+  color: #ffffff;
+  font: inherit;
+  margin: 0;
+}
+
+.mainContactos #container form input {
+  line-height: normal;
+}
+
+.mainContactos #container form textarea {
+  overflow: auto;
+}
+
+.mainContactos #container form .email {
+  float: right;
+  width: 45%;
+}
+
+.mainContactos #container form input[type='text'],
+.mainContactos #container form [type='email'],
+.mainContactos #container form select,
+.mainContactos #container form textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #ffffff;
+  font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.mainContactos #container form input[type='text']:focus,
+.mainContactos #container form [type='email']:focus,
+.mainContactos #container form textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.mainContactos #container form .message {
+  float: none;
+}
+
+.mainContactos #container form .name {
+  float: left;
+  width: 45%;
+}
+
+.mainContactos #container form select::-ms-expand {
+  display: none;
+}
+
+.mainContactos #container form .subject {
+  width: 100%;
+}
+
+.mainContactos #container form .telephone {
+  width: 100%;
+}
+
+.mainContactos #container form textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+.mainContactos #container form ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.mainContactos #container form :-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.mainContactos #container form ::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.mainContactos #container form :-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.mainContactos #container form #form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.mainContactos #container form #form_button:hover {
+  background: #474544;
+  color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .underline {
+    width: 68px;
+  }
+
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .underline {
+    width: 53px;
+  }
+
+  input[type='text'],
+  [type='email'],
+  select,
+  textarea {
+    font-size: 0.875em;
+  }
+}
+
+/* ----------------- Estilos Contactos Fin   ----------------------- */
+/* ---------- Media Queries ------------- */
+/* ------index------------ */
+@media (max-width: 1024px) {
+  .mainIndex {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 0.3fr 0.3fr;
+    grid-template-rows: 0.3fr 0.3fr;
+    gap: 6px 3px;
+    grid-auto-flow: row;
+    grid-template-areas: ". seccionOne seccionOne ."
+      ". seccionTwo seccionTwo .";
+    width: 100%;
+  }
+
+  .mainIndex .seccionOne {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 0.3fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    gap: 10px 5px;
+    grid-auto-flow: row;
+    grid-template-areas: "subtitulo "
+      "fotoFondo2 "
+      "textoIndex ";
+    -ms-grid-column-span: 2;
+    grid-area: seccionOne;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+  }
+
+  .mainIndex .seccionOne .subtitulo {
     -ms-grid-column-align: center;
     justify-self: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-}
+    grid-area: subtitulo;
+  }
 
-.mainCategorias .textoCategorias {
-    margin-top: 20px;
-    margin-right: 20px;
-    text-align: center;
+  .mainIndex .seccionOne .fotoFondo2 {
+    display: inline-block;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    grid-area: fotoFondo2;
+    -ms-grid-column-align: center;
+    justify-self: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .mainIndex .seccionOne .textoIndex {
+    grid-area: textoIndex;
+  }
+
+  .mainIndex .subTituloIndex {
+    -ms-grid-column-align: center;
+    justify-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    grid-area: subTituloIndex;
+  }
 }
 
-.mainCategorias .contenedorTabla {
+@media (max-width: 768px) {
+  .mainIndex {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 0.3fr 0.3fr;
+    grid-template-rows: 0.3fr 0.3fr;
+    gap: 6px 3px;
+    grid-auto-flow: row;
+    grid-template-areas: ". seccionOne  ."
+      ". seccionTwo  .";
+    width: 100%;
+  }
+
+  .mainIndex .seccionOne {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 0.3fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    gap: 10px 5px;
+    grid-auto-flow: row;
+    grid-template-areas: "subtitulo "
+      "fotoFondo2 "
+      "textoIndex ";
+    grid-area: seccionOne;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mainIndex .seccionOne .contenedorImagen1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mainIndex .seccionOne .contenedorImagen1 .fotoFondo2 {
+    display: inline-block;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  span {
+    font-size: 30px;
+  }
+
+  .contacto h3 {
+    font-size: 15px;
+  }
+
+  .contacto h4 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 620px) {
+  .contenedorImagen1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 260px;
+  }
+
+  .contenedorImagen1 .fotoFondo2 {
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 420px) {
+  .seccionOne {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas: "subtitulo "
+      "fotoFondo2 "
+      "textoIndex ";
+    -ms-grid-column-span: 2;
+    grid-area: seccionOne;
+  }
+
+  .seccionOne .contenedorImagen1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+  }
+
+  img.facebook {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  img.instagram {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  img.twitter {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  img.whatsapp {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* ------------categorias-------------- */
+@media (max-width: 620px) {
+  .tituloSecundario {
+    font-size: 30px;
+  }
+
+  .textoCategorias {
+    font-size: 16px;
+  }
+
+  .mainCategorias h2 {
+    font-size: 20px;
+  }
+
+  .contenedorTabla {
     width: 100%;
     height: 500px;
     display: -webkit-box;
@@ -318,878 +996,104 @@ footer .textF {
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 40px;
-}
+  }
 
-.mainCategorias .contenedorTabla table {
-    width: 600px;
+  table {
+    width: 100%;
     border-collapse: collapse;
     overflow: hidden;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
+  }
 
-.mainCategorias .contenedorTabla table tr th {
-    text-align: center;
-    background-color: #1d0f10;
-}
-
-.mainCategorias .contenedorTabla table tr td {
+  th,
+  td {
     padding: 5px;
     background-color: rgba(90, 5, 5, 0.2);
     color: #fff;
-    text-align: center;
-}
+  }
 
-/*------------------ Estilos Categoria Fin------------------- */
-/* ----------------- Estilos Tutoriales inicio--------------- */
-.mainTutoriales .subtitulo {
-    -ms-grid-column-align: center;
-    justify-self: center;
-    text-shadow: 2px 2px 2px #484747;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    text-decoration: underline;
-}
-
-.mainTutoriales h3 {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.mainTutoriales h4 {
-    font-size: 20px;
-    margin-left: 40px;
-    margin-bottom: 20px;
-}
-
-.mainTutoriales p {
-    margin-left: 20px;
-}
-
-.mainTutoriales .container {
-    width: 100%;
-}
-
-.mainTutoriales .container .card-title {
-    color: #000000;
-}
-
-.mainTutoriales .container .card-text {
-    color: #000000;
-}
-
-.mainTutoriales .container .card {
-    background-color: #633224;
-    width: 100%;
-}
-
-.mainTutoriales .container .card-img-top {
-    width: 100%;
-}
-
-.mainTutoriales .container .ingredientesSub {
+  th {
     text-align: left;
-}
-
-.mainTutoriales .container .lista {
-    text-align: left;
-}
-
-/* ----------------- Estilos Tutoriales fin------------------- */
-/* ----------------- Estilos Tip inicio   -------------------- */
-.mainTips {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0.2fr 4.2fr 0.2fr;
-    grid-template-columns: 0.2fr 4.2fr 0.2fr;
-    -ms-grid-rows: 0.2fr 0.3fr 0.2fr 2.4fr 0.3fr 2.6fr;
-    grid-template-rows: 0.2fr 0.3fr 0.2fr 2.4fr 0.3fr 2.6fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: ". contexto ."
-        ". textoTips1 ."
-        ". experiencias ."
-        ". exp ."
-        ". textAnecdotas ."
-        ". anecdotas .";
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-.mainTips h3 {
-    font-size: 25px;
-    margin-left: 50px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    text-decoration: underline;
-    text-shadow: 0 0 5px black;
-}
-
-.mainTips .contexto {
-    -ms-grid-column-align: center;
-    justify-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    
-    grid-area: contexto;
-}
-
-.mainTips .textoTips1 {
-    
-    grid-area: textoTips1;
-}
-
-.mainTips .experiencias {
-    -ms-grid-column-align: center;
-    justify-self: center;
-    
-    grid-area: experiencias;
-}
-
-.mainTips .exp {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "textoTips2 contenedorTips1";
-    
-    grid-area: exp;
-}
-
-.mainTips .exp .contenedorTips1 {
-    
-    grid-area: contenedorTips1;
-}
-
-.mainTips .exp .contenedorTips1 .videoTips {
-    width: 400px;
-    height: 400px;
-}
-
-.mainTips .exp .contenedorTips1 .textoTips2 {
-    
-    grid-area: textoTips2;
-}
-
-.mainTips .textAnecdotas {
-    -ms-grid-column-align: center;
-    justify-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    
-    grid-area: textAnecdotas;
-}
-
-.mainTips .anecdotas {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1.5fr;
-    grid-template-rows: 1.5fr;
-    gap: 0px 36px;
-    grid-auto-flow: row;
-    grid-template-areas: "textotips3 contenedorTips2";
-    
-    grid-area: anecdotas;
-}
-
-.mainTips .anecdotas .contenedorTips2 {
-    
-    grid-area: contenedorTips2;
-}
-
-.mainTips .anecdotas .contenedorTips2 .fotoAnecdota {
-    width: 100%;
-    height: 400px;
-    -o-object-fit: contain;
-    object-fit: contain;
-}
-
-.mainTips .anecdotas .contenedorTips2 .textotips3 {
-    
-    grid-area: textotips3;
-}
-
-/* ----------------- Estilos Tip fin   ----------------------- */
-/* ----------------- Estilos Contactos inicio   ----------------------- */
-.mainContactos #container {
-    border: solid 3px #ffffff;
-    max-width: 768px;
-    margin: 60px auto;
-    position: relative;
-}
-
-.mainContactos #container .contactosH1 {
-    color: #ffffff;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 7px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.mainContactos #container .underline {
-    border-bottom: solid 2px #ffffff;
-    margin: -0.512em auto;
-    width: 350px;
-}
-
-.mainContactos #container .icon_wrapper {
-    margin: 50px auto 0;
-    width: 100%;
-}
-
-.mainContactos #container .icon_wrapper .icon {
-    display: block;
-    fill: #ffffff;
-    height: 50px;
-    margin: 0 auto;
-    width: 50px;
-}
-
-.mainContactos #container form {
-    padding: 37.5px;
-    margin: 50px 0;
-}
-
-.mainContactos #container form button {
-    overflow: visible;
-}
-
-.mainContactos #container form button,
-.mainContactos #container form select {
-    text-transform: none;
-}
-
-.mainContactos #container form button,
-.mainContactos #container form input,
-.mainContactos #container form select,
-.mainContactos #container form textarea {
-    color: #ffffff;
-    font: inherit;
-    margin: 0;
-}
-
-.mainContactos #container form input {
-    line-height: normal;
-}
-
-.mainContactos #container form textarea {
-    overflow: auto;
-}
-
-.mainContactos #container form .email {
-    float: right;
-    width: 45%;
-}
-
-.mainContactos #container form input[type='text'],
-.mainContactos #container form [type='email'],
-.mainContactos #container form select,
-.mainContactos #container form textarea {
-    background: none;
-    border: none;
-    border-bottom: solid 2px #474544;
-    color: #ffffff;
-    font-size: 1.000em;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin: 0em 0 1.875em 0;
-    padding: 0 0 0.875em 0;
-    text-transform: uppercase;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.mainContactos #container form input[type='text']:focus,
-.mainContactos #container form [type='email']:focus,
-.mainContactos #container form textarea:focus {
-    outline: none;
-    padding: 0 0 0.875em 0;
-}
-
-.mainContactos #container form .message {
-    float: none;
-}
-
-.mainContactos #container form .name {
-    float: left;
-    width: 45%;
-}
-
-.mainContactos #container form select::-ms-expand {
-    display: none;
-}
-
-.mainContactos #container form .subject {
-    width: 100%;
-}
-
-.mainContactos #container form .telephone {
-    width: 100%;
-}
-
-.mainContactos #container form textarea {
-    line-height: 150%;
-    height: 150px;
-    resize: none;
-    width: 100%;
-}
-
-.mainContactos #container form ::-webkit-input-placeholder {
-    color: #ffffff;
-}
-
-.mainContactos #container form :-moz-placeholder {
-    color: #ffffff;
-    opacity: 1;
-}
-
-.mainContactos #container form ::-moz-placeholder {
-    color: #ffffff;
-    opacity: 1;
-}
-
-.mainContactos #container form :-ms-input-placeholder {
-    color: #ffffff;
-}
-
-.mainContactos #container form #form_button {
-    background: none;
-    border: solid 2px #474544;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'Helvetica', Arial, sans-serif;
-    font-size: 0.875em;
-    font-weight: bold;
-    outline: none;
-    padding: 20px 35px;
-    text-transform: uppercase;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.mainContactos #container form #form_button:hover {
-    background: #474544;
-    color: #F2F3EB;
-}
-
-@media screen and (max-width: 768px) {
-    #container {
-        margin: 20px auto;
-        width: 95%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 26px;
-    }
-
-    .underline {
-        width: 68px;
-    }
-
-    #form_button {
-        padding: 15px 25px;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    h1 {
-        font-size: 18px;
-    }
-
-    .icon {
-        height: 35px;
-        width: 35px;
-    }
-
-    .underline {
-        width: 53px;
-    }
-
-    input[type='text'],
-    [type='email'],
-    select,
-    textarea {
-        font-size: 0.875em;
-    }
-}
-
-/* ----------------- Estilos Contactos Fin   ----------------------- */
-/* ---------- Media Queries ------------- */
-/* ------index------------ */
-@media (max-width: 1024px) {
-    .mainIndex {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: 0.3fr 0.3fr;
-        grid-template-rows: 0.3fr 0.3fr;
-        gap: 6px 3px;
-        grid-auto-flow: row;
-        grid-template-areas: ". seccionOne seccionOne ."
-            ". seccionTwo seccionTwo .";
-        width: 100%;
-    }
-
-    .mainIndex .seccionOne {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: 0.3fr 1fr;
-        grid-template-rows: 0.3fr 1fr;
-        gap: 10px 5px;
-        grid-auto-flow: row;
-        grid-template-areas: "subtitulo "
-            "fotoFondo2 "
-            "textoIndex ";
-        
-        -ms-grid-column-span: 2;
-        grid-area: seccionOne;
-        margin-left: auto;
-        margin-right: auto;
-        justify-items: center;
-    }
-
-    .mainIndex .seccionOne .subtitulo {
-        -ms-grid-column-align: center;
-        justify-self: center;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-        
-        grid-area: subtitulo;
-    }
-
-    .mainIndex .seccionOne .fotoFondo2 {
-        display: inline-block;
-        background-position: center;
-        width: 100%;
-        height: 100%;
-        
-        grid-area: fotoFondo2;
-        -ms-grid-column-align: center;
-        justify-self: center;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-
-    .mainIndex .seccionOne .textoIndex {
-        
-        grid-area: textoIndex;
-    }
-
-    .mainIndex .subTituloIndex {
-        -ms-grid-column-align: center;
-        justify-self: center;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-        
-        grid-area: subTituloIndex;
-    }
-}
-
-@media (max-width: 768px) {
-    .mainIndex {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: 0.3fr 0.3fr;
-        grid-template-rows: 0.3fr 0.3fr;
-        gap: 6px 3px;
-        grid-auto-flow: row;
-        grid-template-areas: ". seccionOne  ."
-            ". seccionTwo  .";
-        width: 100%;
-    }
-
-    .mainIndex .seccionOne {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: 0.3fr 1fr;
-        grid-template-rows: 0.3fr 1fr;
-        gap: 10px 5px;
-        grid-auto-flow: row;
-        grid-template-areas: "subtitulo "
-            "fotoFondo2 "
-            "textoIndex ";
-        
-        grid-area: seccionOne;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .mainIndex .seccionOne .contenedorImagen1 {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .mainIndex .seccionOne .contenedorImagen1 .fotoFondo2 {
-        display: inline-block;
-        background-position: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .titulo {
-        font-size: 30px;
-    }
-
-    span {
-        font-size: 30px;
-    }
-
-    .contacto h3 {
-        font-size: 15px;
-    }
-
-    .contacto h4 {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 620px) {
-    .contenedorImagen1 {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 100%;
-        height: 260px;
-    }
-
-    .contenedorImagen1 .fotoFondo2 {
-        background-position: center;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-    }
-
-    .carousel-inner img {
-        width: 100%;
-        height: 300px;
-    }
-}
-
-@media (max-width: 420px) {
-    .seccionOne {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        gap: 2px 2px;
-        grid-auto-flow: row;
-        grid-template-areas: "subtitulo "
-            "fotoFondo2 "
-            "textoIndex ";
-        
-        -ms-grid-column-span: 2;
-        grid-area: seccionOne;
-    }
-
-    .seccionOne .contenedorImagen1 {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 100%;
-        height: 200px;
-    }
-
-    .seccionOne .subtitulo {
-        font-size: 18px;
-    }
-
-    .seccionOne .seccionTwo h2 {
-        font-size: 18px;
-    }
-
-    .seccionOne .textoIndex {
-        font-size: 16px;
-    }
-
-    .subTituloIndex {
-        font-size: 18px;
-    }
-
-    img.facebook {
-        height: 20px;
-        width: 20px;
-        margin-right: 10px;
-    }
-
-    img.instagram {
-        height: 20px;
-        width: 20px;
-        margin-right: 10px;
-    }
-
-    img.twitter {
-        height: 20px;
-        width: 20px;
-        margin-right: 10px;
-    }
-
-    img.whatsapp {
-        height: 20px;
-        width: 20px;
-        margin-right: 10px;
-    }
-
-    .carousel-inner img {
-        width: 100%;
-        height: 250px;
-    }
-}
-
-/* ------------categorias-------------- */
-@media (max-width: 620px) {
-    .tituloSecundario {
-        font-size: 30px;
-    }
-
-    .textoCategorias {
-        font-size: 16px;
-    }
-
-    .mainCategorias h2 {
-        font-size: 20px;
-    }
-
-    .contenedorTabla {
-        width: 100%;
-        height: 500px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 40px;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        overflow: hidden;
-        -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    }
-
-    th,
-    td {
-        padding: 5px;
-        background-color: rgba(90, 5, 5, 0.2);
-        color: #fff;
-    }
-
-    th {
-        text-align: left;
-        background-color: #1d0f10;
-    }
+    background-color: #1d0f10;
+  }
 }
 
 /* --------Tutoriales----- */
 /* ------Tips----- */
 @media (max-width: 720px) {
-    .tituloSecundario {
-        font-size: 30px;
-    }
+  .mainTips .tituloSecundario {
+    font-size: 30px;
+  }
 
-    .mainTips h3 {
-        font-size: 20px;
-    }
+  .mainTips .mainTips h3 {
+    font-size: 20px;
+  }
 
-    .mainTips p {
-        font-size: 16px;
-    }
+  .mainTips .mainTips p,
+  .mainTips .mainTips .mainIndex .seccionOne .textoIndex,
+  .mainIndex .seccionOne .mainTips .mainTips .textoIndex {
+    font-size: 16px;
+  }
 
-    .exp {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        gap: 15px 15px;
-        grid-auto-flow: row;
-        grid-template-areas: "textoTips2 "
-            "contenedorTips1";
-        
-        grid-area: exp;
-        justify-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
+  .mainTips .exp {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas: "textoTips2 "
+      "contenedorTips1";
+    grid-area: exp;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 
-    .anecdotas {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: 0.5fr;
-        grid-template-rows: 0.5fr;
-        gap: 10px 0px;
-        grid-auto-flow: row;
-        grid-template-areas: "contenedorTips2"
-            "textotips3 ";
-        
-        grid-area: anecdotas;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
+  .mainTips .exp .contenedorTips1 {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 250px;
+  }
 
-    .contenedorTips2 {
-        width: 100%;
-        height: 250px;
-    }
+  .mainTips .exp .contenedorTips1 .videoTips {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 
-    .contenedorTips1 {
-        width: 300px;
-        height: 150px;
-        margin-bottom: 250px;
-    }
+  .mainTips .anecdotas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 0.5fr;
+    grid-template-rows: 0.5fr;
+    gap: 10px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "contenedorTips2"
+      "textotips3 ";
+    grid-area: anecdotas;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 
-    .videoTips {
-        width: 100%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
+  .mainTips .anecdotas .contenedorTips2 {
+    width: 100%;
+    height: 250px;
+  }
 
-    .fotoAnecdota {
-        width: 100%;
-        height: 100%;
-        -o-object-fit: contain;
-        object-fit: contain;
-    }
-}
-
-/* -------contactos------ */
-@media (max-width: 1024px) {
-    .contenedorFormulario {
-        width: 600px;
-        height: 600px;
-        margin: auto;
-        margin-bottom: 200px;
-    }
-
-    .formulario {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
-        height: 650px;
-        margin-bottom: 200px;
-    }
-
-    .formSeccion {
-        width: 100%;
-        height: 100%;
-    }
-
-    .textArea {
-        width: 300px;
-        height: 250px;
-    }
-
-    .formLetras {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
-    .bottom {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 620px) {
-    .mainContactos h3 {
-        font-size: 18px;
-    }
-
-    .contenedorFormulario {
-        width: 300px;
-        height: 600px;
-        margin: auto;
-        margin-bottom: 200px;
-    }
-
-    .formulario {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
-        height: 560px;
-        margin-bottom: 200px;
-    }
-
-    .formSeccion {
-        width: 100%;
-        height: 100%;
-    }
-
-    .textArea {
-        width: 220px;
-        height: 180px;
-        font-size: 16px;
-    }
-
-    .formLetras {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        font-size: 16px;
-    }
+  .mainTips .anecdotas .contenedorTips2 .fotoAnecdota {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
