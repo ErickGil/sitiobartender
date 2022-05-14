@@ -4,7 +4,7 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: cursive;
   color: white;
 }
 
@@ -37,8 +37,8 @@
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #c9a460;
-  text-shadow: 5px 5px 5px black;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #4e8710;
 }
 
 header {
@@ -299,6 +299,18 @@ footer .textF {
 
 /*------------------- Estilos index fin--------------------- */
 /* ------------------Estilos Categoria inicio--------------- */
+.mainCategorias {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
 .mainCategorias .subtitulo {
   -ms-grid-column-align: center;
   justify-self: center;
@@ -315,99 +327,514 @@ footer .textF {
   margin-right: 20px;
   text-align: center;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
-}
-
-.mainCategorias .contenedorTabla {
-  width: 100%;
-  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
 }
 
-.mainCategorias .contenedorTabla table {
-  width: 600px;
-  border-collapse: collapse;
+.mainCategorias .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.mainCategorias .container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  -webkit-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #7a7878;
+}
+
+.mainCategorias .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #331400;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.mainCategorias .contenedorTabla table tr th {
+.container .card .box:hover {
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+
+.container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.container .card .box .content {
+  padding: 20px;
   text-align: center;
-  background-color: #1d0f10;
 }
 
-.mainCategorias .contenedorTabla table tr td {
-  padding: 5px;
-  background-color: rgba(90, 5, 5, 0.2);
+.container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.container .card .box .content h3 {
+  font-size: 1.8rem;
   color: #fff;
-  text-align: center;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+.container .card .box .content p,
+.container .card .box .content .mainIndex .seccionOne .textoIndex,
+.mainIndex .seccionOne .container .card .box .content .textoIndex {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .card .box .content a :hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
 }
 
 /*------------------ Estilos Categoria Fin------------------- */
 /* ----------------- Estilos Tutoriales inicio--------------- */
+.mainTutoriales {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #444;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .mainTutoriales .subtitulo {
   -ms-grid-column-align: center;
   justify-self: center;
   text-shadow: 0px 0px 5px #c6d30b;
   margin-bottom: 60px;
   padding-top: 70px;
+  font-size: 35px;
 }
 
-.mainTutoriales h3 {
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 20px;
+.mainTutoriales .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
 }
 
-.mainTutoriales h4 {
+.mainTutoriales .contenedor .image-block {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  width: 370px;
+  height: 635px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+
+.mainTutoriales .contenedor .image-block:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.mainTutoriales .contenedor .image-block:hover img {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.mainTutoriales .contenedor .image-block:hover figcaption {
+  bottom: 0;
+}
+
+.mainTutoriales .contenedor .image-block h1 {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-shadow: 0px 5px 8px #2b0505;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.mainTutoriales .contenedor .image-block img {
+  height: 100%;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.mainTutoriales .contenedor .image-block figcaption {
+  position: absolute;
+  bottom: -38%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.mainTutoriales .contenedor .image-block figcaption h3 {
+  margin: 0 0 20px;
+  padding: 0;
   font-size: 20px;
-  margin-left: 40px;
-  margin-bottom: 20px;
 }
 
-.mainTutoriales p,
-.mainTutoriales .mainIndex .seccionOne .textoIndex,
-.mainIndex .seccionOne .mainTutoriales .textoIndex {
-  margin-left: 20px;
+.mainTutoriales .contenedor .image-block figcaption p,
+.mainTutoriales .contenedor .image-block figcaption .mainIndex .seccionOne .textoIndex,
+.mainIndex .seccionOne .mainTutoriales .contenedor .image-block figcaption .textoIndex {
+  font-size: 14px;
+  line-height: 1.75;
 }
 
-.mainTutoriales .container {
+.mainTutoriales .contenedor .image-block2 {
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  width: 370px;
+  height: 635px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+
+.mainTutoriales .contenedor .image-block2:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.mainTutoriales .contenedor .image-block2:hover img {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.mainTutoriales .contenedor .image-block2:hover figcaption {
+  bottom: 0;
+}
+
+.mainTutoriales .contenedor .image-block2 h1 {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-shadow: 0px 5px 8px #2b0505;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.mainTutoriales .contenedor .image-block2 .imagen {
+  height: 100%;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.mainTutoriales .contenedor .image-block2 figcaption {
+  position: absolute;
+  bottom: -38%;
+  left: 0;
   width: 100%;
+  margin: 0;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
-.mainTutoriales .container .card-title {
-  color: #000000;
+.mainTutoriales .contenedor .image-block2 figcaption h3 {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 20px;
 }
 
-.mainTutoriales .container .card-text {
-  color: #000000;
+.mainTutoriales .contenedor .image-block2 figcaption p,
+.mainTutoriales .contenedor .image-block2 figcaption .mainIndex .seccionOne .textoIndex,
+.mainIndex .seccionOne .mainTutoriales .contenedor .image-block2 figcaption .textoIndex {
+  font-size: 14px;
+  line-height: 1.75;
 }
 
-.mainTutoriales .container .card {
-  background-color: #633224;
+.mainTutoriales .contenedor .image-block3 {
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  width: 370px;
+  height: 635px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+
+.mainTutoriales .contenedor .image-block3:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.mainTutoriales .contenedor .image-block3:hover img {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.mainTutoriales .contenedor .image-block3:hover figcaption {
+  bottom: 0;
+}
+
+.mainTutoriales .contenedor .image-block3 h1 {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-shadow: 0px 5px 8px #2b0505;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.mainTutoriales .contenedor .image-block3 img {
+  height: 100%;
+  -webkit-transition: 0.45s;
+  transition: 0.45s;
+}
+
+.mainTutoriales .contenedor .image-block3 figcaption {
+  position: absolute;
+  bottom: -38%;
+  left: 0;
   width: 100%;
+  margin: 0;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
-.mainTutoriales .container .card-img-top {
+.mainTutoriales .contenedor .image-block3 figcaption h3 {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 20px;
+}
+
+.mainTutoriales .contenedor .image-block3 figcaption p,
+.mainTutoriales .contenedor .image-block3 figcaption .mainIndex .seccionOne .textoIndex,
+.mainIndex .seccionOne .mainTutoriales .contenedor .image-block3 figcaption .textoIndex {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.mainTutoriales .contenedor .image-block4 {
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  width: 370px;
+  height: 635px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+
+.mainTutoriales .contenedor .image-block4:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.mainTutoriales .contenedor .image-block4:hover img {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.mainTutoriales .contenedor .image-block4:hover figcaption {
+  bottom: 0;
+}
+
+.mainTutoriales .contenedor .image-block4 h1 {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-shadow: 0px 5px 8px #2b0505;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.mainTutoriales .contenedor .image-block4 img {
+  height: 100%;
+  -webkit-transition: 0.45s;
+  transition: 0.45s;
+}
+
+.mainTutoriales .contenedor .image-block4 figcaption {
+  position: absolute;
+  bottom: -38%;
+  left: 0;
   width: 100%;
+  margin: 0;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
-.mainTutoriales .container .ingredientesSub {
-  text-align: left;
+.mainTutoriales .contenedor .image-block4 figcaption h3 {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 20px;
 }
 
-.mainTutoriales .container .lista {
-  text-align: left;
+.mainTutoriales .contenedor .image-block4 figcaption p,
+.mainTutoriales .contenedor .image-block4 figcaption .mainIndex .seccionOne .textoIndex,
+.mainIndex .seccionOne .mainTutoriales .contenedor .image-block4 figcaption .textoIndex {
+  font-size: 14px;
+  line-height: 1.75;
 }
 
 /* ----------------- Estilos Tutoriales fin------------------- */
@@ -440,11 +867,9 @@ footer .textF {
 }
 
 .mainTips .contexto {
-  -ms-grid-column-align: center;
-  justify-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+  
   grid-area: contexto;
   font-size: 30px;
   text-shadow: 0px 0px 5px #c6d30b;
@@ -458,10 +883,10 @@ footer .textF {
 }
 
 .mainTips .experiencias {
-  -ms-grid-column-align: center;
-  justify-self: center;
+  margin-right: auto;
+  margin-left: auto;
   grid-area: experiencias;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .mainTips .exp {
@@ -479,23 +904,26 @@ footer .textF {
 
 .mainTips .exp .contenedorTips1 {
   grid-area: contenedorTips1;
+  margin-top: 10px;
 }
 
-.mainTips .exp .contenedorTips1 .videoTips {
-  width: 400px;
-  height: 400px;
+.mainTips .exp .contenedorTips1 .fotoExp {
+  height: auto;
+  max-width: 90%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .mainTips .exp .contenedorTips1 .textoTips2 {
   grid-area: textoTips2;
+  margin-top: 20px;
 }
 
 .mainTips .textAnecdotas {
-  -ms-grid-column-align: center;
-  justify-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
   grid-area: textAnecdotas;
   margin-bottom: 50px;
 }
@@ -507,11 +935,11 @@ footer .textF {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1.5fr;
   grid-template-rows: 1.5fr;
-  gap: 0px 36px;
+  gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "textotips3 contenedorTips2";
   grid-area: anecdotas;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .mainTips .anecdotas .contenedorTips2 {
@@ -519,13 +947,15 @@ footer .textF {
 }
 
 .mainTips .anecdotas .contenedorTips2 .fotoAnecdota {
-  width: 100%;
+  height: auto;
+  max-width: 90%;
   -o-object-fit: contain;
   object-fit: contain;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .mainTips .anecdotas .contenedorTips2 .textotips3 {
-
   grid-area: textotips3;
 }
 
@@ -775,6 +1205,7 @@ footer .textF {
     grid-template-areas: "subtitulo "
       "fotoFondo2 "
       "textoIndex ";
+
     -ms-grid-column-span: 2;
     grid-area: seccionOne;
     margin-left: auto;
@@ -972,54 +1403,145 @@ footer .textF {
 }
 
 /* ------------categorias-------------- */
-@media (max-width: 620px) {
-  .tituloSecundario {
-    font-size: 30px;
+/* --------Tutoriales----- */
+@media (max-width: 480px) {
+  .mainTutoriales .contenedor .image-block {
+    width: 300px;
+    height: 550px;
   }
 
-  .textoCategorias {
-    font-size: 16px;
+  .mainTutoriales .contenedor .image-block figcaption {
+    position: absolute;
+    bottom: -38%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.85);
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    line-height: 1;
+    -webkit-transition: 0.45s;
+    transition: 0.45s;
   }
 
-  .mainCategorias h2 {
+  .mainTutoriales .contenedor .image-block figcaption h3 {
+    margin: 0 0 20px;
+    padding: 0;
     font-size: 20px;
   }
 
-  .contenedorTabla {
+  .mainTutoriales .contenedor .image-block figcaption p,
+  .mainTutoriales .contenedor .image-block figcaption .mainIndex .seccionOne .textoIndex,
+  .mainIndex .seccionOne .mainTutoriales .contenedor .image-block figcaption .textoIndex {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .mainTutoriales .contenedor .image-block2 {
+    width: 300px;
+    height: 550px;
+  }
+
+  .mainTutoriales .contenedor .image-block2 figcaption {
+    position: absolute;
+    bottom: -38%;
+    left: 0;
     width: 100%;
-    height: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin: 0;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.85);
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    line-height: 1;
+    -webkit-transition: 0.45s;
+    transition: 0.45s;
   }
 
-  table {
+  .mainTutoriales .contenedor .image-block2 figcaption h3 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .mainTutoriales .contenedor .image-block2 figcaption p,
+  .mainTutoriales .contenedor .image-block2 figcaption .mainIndex .seccionOne .textoIndex,
+  .mainIndex .seccionOne .mainTutoriales .contenedor .image-block2 figcaption .textoIndex {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .mainTutoriales .contenedor .image-block3 {
+    width: 300px;
+    height: 550px;
+  }
+
+  .mainTutoriales .contenedor .image-block3 figcaption {
+    position: absolute;
+    bottom: -38%;
+    left: 0;
     width: 100%;
-    border-collapse: collapse;
-    overflow: hidden;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.85);
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    line-height: 1;
+    -webkit-transition: 0.45s;
+    transition: 0.45s;
   }
 
-  th,
-  td {
-    padding: 5px;
-    background-color: rgba(90, 5, 5, 0.2);
-    color: #fff;
+  .mainTutoriales .contenedor .image-block3 figcaption h3 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 20px;
   }
 
-  th {
-    text-align: left;
-    background-color: #1d0f10;
+  .mainTutoriales .contenedor .image-block3 figcaption p,
+  .mainTutoriales .contenedor .image-block3 figcaption .mainIndex .seccionOne .textoIndex,
+  .mainIndex .seccionOne .mainTutoriales .contenedor .image-block3 figcaption .textoIndex {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .mainTutoriales .contenedor .image-block4 {
+    width: 300px;
+    height: 550px;
+  }
+
+  .mainTutoriales .contenedor .image-block4 figcaption {
+    position: absolute;
+    bottom: -38%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.85);
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    line-height: 1;
+    -webkit-transition: 0.45s;
+    transition: 0.45s;
+  }
+
+  .mainTutoriales .contenedor .image-block4 figcaption h3 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .mainTutoriales .contenedor .image-block4 figcaption p,
+  .mainTutoriales .contenedor .image-block4 figcaption .mainIndex .seccionOne .textoIndex,
+  .mainIndex .seccionOne .mainTutoriales .contenedor .image-block4 figcaption .textoIndex {
+    font-size: 14px;
+    line-height: 1.75;
   }
 }
 
-/* --------Tutoriales----- */
 /* ------Tips----- */
 @media (max-width: 720px) {
   .mainTips .tituloSecundario {
@@ -1057,7 +1579,7 @@ footer .textF {
   .mainTips .exp .contenedorTips1 {
     width: 300px;
     height: 150px;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
   }
 
   .mainTips .exp .contenedorTips1 .videoTips {
@@ -1078,6 +1600,7 @@ footer .textF {
     grid-auto-flow: row;
     grid-template-areas: "contenedorTips2"
       "textotips3 ";
+    
     grid-area: anecdotas;
     margin-bottom: 10px;
     margin-top: 10px;
