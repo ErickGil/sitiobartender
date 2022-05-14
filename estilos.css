@@ -4,7 +4,7 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
@@ -552,7 +552,7 @@ footer .textF {
 
 .mainTutoriales .contenedor .image-block figcaption {
   position: absolute;
-  bottom: -38%;
+  bottom: -33%;
   left: 0;
   width: 100%;
   margin: 0;
@@ -638,7 +638,7 @@ footer .textF {
 
 .mainTutoriales .contenedor .image-block2 figcaption {
   position: absolute;
-  bottom: -38%;
+  bottom: -33%;
   left: 0;
   width: 100%;
   margin: 0;
@@ -724,7 +724,7 @@ footer .textF {
 
 .mainTutoriales .contenedor .image-block3 figcaption {
   position: absolute;
-  bottom: -38%;
+  bottom: -33%;
   left: 0;
   width: 100%;
   margin: 0;
@@ -810,7 +810,7 @@ footer .textF {
 
 .mainTutoriales .contenedor .image-block4 figcaption {
   position: absolute;
-  bottom: -38%;
+  bottom: -33%;
   left: 0;
   width: 100%;
   margin: 0;
@@ -869,7 +869,6 @@ footer .textF {
 .mainTips .contexto {
   margin-right: auto;
   margin-left: auto;
-  
   grid-area: contexto;
   font-size: 30px;
   text-shadow: 0px 0px 5px #c6d30b;
@@ -1205,7 +1204,6 @@ footer .textF {
     grid-template-areas: "subtitulo "
       "fotoFondo2 "
       "textoIndex ";
-
     -ms-grid-column-span: 2;
     grid-area: seccionOne;
     margin-left: auto;
@@ -1600,7 +1598,6 @@ footer .textF {
     grid-auto-flow: row;
     grid-template-areas: "contenedorTips2"
       "textotips3 ";
-    
     grid-area: anecdotas;
     margin-bottom: 10px;
     margin-top: 10px;
