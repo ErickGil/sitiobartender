@@ -815,7 +815,7 @@ footer {
             .underline {
                 border-bottom: solid 2px #ffffff;
                 margin: -0.512em auto;
-                width: 350px;
+                width: 299px;
             }
 
             .icon_wrapper {
@@ -995,26 +995,27 @@ footer {
     }
 
     @media screen and (max-width: 420px) {
-        h1 {
-            font-size: 18px;
-        }
+            h1 {
+                font-size: 18px;
+            }
+    
+            .icon {
+                height: 35px;
+                width: 35px;
+            }
+    
+            .underline {
+                width: 30px;
+            }
+    
+            input[type='text'],
+            [type='email'],
+            select,
+            textarea {
+                font-size: 0.875em;
+            }
 
-        .icon {
-            height: 35px;
-            width: 35px;
         }
-
-        .underline {
-            width: 53px;
-        }
-
-        input[type='text'],
-        [type='email'],
-        select,
-        textarea {
-            font-size: 0.875em;
-        }
-    }
 
     /* ----------------- Estilos Contactos Fin   ----------------------- */
 

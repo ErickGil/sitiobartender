@@ -982,7 +982,7 @@ footer .textF {
 .mainContactos #container .underline {
   border-bottom: solid 2px #ffffff;
   margin: -0.512em auto;
-  width: 350px;
+  width: 299px;
 }
 
 .mainContactos #container .icon_wrapper {
@@ -1163,7 +1163,7 @@ footer .textF {
   }
 
   .underline {
-    width: 53px;
+    width: 30px;
   }
 
   input[type='text'],
