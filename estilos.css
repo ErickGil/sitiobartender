@@ -47,16 +47,24 @@ header {
   background-image: url(./imgTragos/fotologo.jpg);
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header .tituloSecundario {
-  color: white;
-  text-shadow: 0px 0px 5px #c6d30b;
+  color: #fff6a9;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
   font-size: 45px;
   text-align: center;
   background-color: transparent;
   text-transform: capitalize;
-  padding-top: 150px;
 }
 
 header .animate__animated.animate__slideInDown {
@@ -138,22 +146,58 @@ footer .textF {
 
 /*------------------------ Estilos index inicio ---------------------------*/
 .titulo {
-  color: white;
-  text-shadow: 6px 6px 6px orange;
-  font-size: 35px;
+  font-size: 60px;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  background-color: transparent;
-  text-transform: capitalize;
-  padding-top: 150px;
-  font-weight: 550;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+  padding: 5px;
 }
 
-.titulo span {
-  font-size: 35px;
-  background-color: transparent;
-  color: #000000;
+@-webkit-keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: transparent;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
 }
 
 .animate__animated.animate__fadeIn {
@@ -459,7 +503,8 @@ footer .textF {
 /*------------------ Estilos Categoria Fin------------------- */
 /* ----------------- Estilos Tutoriales inicio--------------- */
 .mainTutoriales {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto',
+    sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
@@ -1251,11 +1296,7 @@ footer .textF {
 
 @media (max-width: 768px) {
   body .titulo {
-    font-size: 30px;
-  }
-
-  body .titulo span {
-    font-size: 30px;
+    font-size: 45px;
   }
 
   .mainIndex {
