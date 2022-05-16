@@ -159,7 +159,7 @@ footer {
     text-transform: uppercase;
 
     span {
-        font-size: 40px;
+        font-size: 35px;
         background-color: transparent;
         color: #000000;
     }
@@ -1086,6 +1086,16 @@ footer {
     }
 
     @media (max-width: 768px) {
+        body{
+            .titulo {
+                font-size: 30px;
+                
+            span {
+                font-size: 30px;
+            }
+            }
+        }
+        
         .mainIndex {
             display: grid;
             grid-template-columns: 1fr;
@@ -1128,15 +1138,6 @@ footer {
                 }
             }
         }
-
-        .titulo {
-            font-size: 30px;
-        }
-
-        span {
-            font-size: 30px;
-        }
-
 
         .contacto h3 {
             font-size: 15px;
