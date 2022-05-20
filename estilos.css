@@ -151,8 +151,8 @@ footer .textF {
   color: #fff6a9;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  animation: blink 12s infinite;
-  -webkit-animation: blink 12s infinite;
+  animation: blink 1s infinite;
+  -webkit-animation: blink 3s infinite;
   padding: 5px;
 }
 
@@ -889,26 +889,15 @@ footer .textF {
   display: grid;
   -ms-grid-columns: 0.2fr 4.2fr 0.2fr;
   grid-template-columns: 0.2fr 4.2fr 0.2fr;
-  -ms-grid-rows: 0.2fr 0.3fr 0.2fr 2.4fr 0.3fr 2.6fr;
-  grid-template-rows: 0.2fr 0.3fr 0.2fr 2.4fr 0.3fr 2.6fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: ". contexto ."
     ". textoTips1 ."
-    ". experiencias ."
     ". exp ."
-    ". textAnecdotas ."
     ". anecdotas .";
   margin-bottom: 50px;
-}
-
-.mainTips h3 {
-  font-size: 25px;
-  margin-left: 50px;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  text-decoration: underline;
-  text-shadow: 0 0 5px black;
 }
 
 .mainTips .contexto {
@@ -926,24 +915,33 @@ footer .textF {
   grid-area: textoTips1;
 }
 
-.mainTips .experiencias {
-  margin-right: auto;
-  margin-left: auto;
-  grid-area: experiencias;
-  margin-bottom: 10px;
-}
-
 .mainTips .exp {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
+  -ms-grid-rows: 0.2fr;
+  grid-template-rows: 0.2fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "textoTips2 contenedorTips1";
   grid-area: exp;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mainTips .exp .textoTips2 {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align-last: center;
+}
+
+.mainTips .exp .textoTips2 .home-title {
+  margin-bottom: 30px;
+  border-bottom: 3px solid #3a2104;
 }
 
 .mainTips .exp .contenedorTips1 {
@@ -960,16 +958,99 @@ footer .textF {
   margin-right: 10px;
 }
 
-.mainTips .exp .contenedorTips1 .textoTips2 {
-  grid-area: textoTips2;
-  margin-top: 20px;
+.mainTips .home-title span {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  line-height: 1.2;
 }
 
-.mainTips .textAnecdotas {
-  margin-right: auto;
-  margin-left: auto;
-  grid-area: textAnecdotas;
-  margin-bottom: 50px;
+.mainTips .home-title span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #2b0202;
+  -webkit-animation: a-ltr-after 2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+  animation: a-ltr-after 2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+  -webkit-transform: translateX(-101%);
+  transform: translateX(-101%);
+}
+
+.mainTips .home-title span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  -webkit-animation: a-ltr-before 2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+  animation: a-ltr-before 2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.mainTips .home-title span:nth-of-type(1)::before,
+.mainTips .home-title span:nth-of-type(1)::after {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.mainTips .home-title span:nth-of-type(2)::before,
+.mainTips .home-title span:nth-of-type(2)::after {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+@-webkit-keyframes a-ltr-after {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(101%);
+    transform: translateX(101%);
+  }
+}
+
+@keyframes a-ltr-after {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(101%);
+    transform: translateX(101%);
+  }
+}
+
+@-webkit-keyframes a-ltr-before {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+  }
+}
+
+@keyframes a-ltr-before {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+  }
 }
 
 .mainTips .anecdotas {
@@ -981,26 +1062,37 @@ footer .textF {
   grid-template-rows: 1.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "textotips3 contenedorTips2";
+  grid-template-areas: "contenedorTips2 textotips3";
   grid-area: anecdotas;
   margin-bottom: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-.mainTips .anecdotas .contenedorTips2 {
+.mainTips .anecdotas .textotips3 {
+  grid-area: textotips3;
+  text-align-last: center;
+}
+
+.mainTips .anecdotas .textotips3 .home-title {
+  margin-bottom: 30px;
+  border-bottom: 3px solid #3a2104;
+}
+
+.mainTips .contenedorTips2 {
   grid-area: contenedorTips2;
 }
 
-.mainTips .anecdotas .contenedorTips2 .fotoAnecdota {
+.mainTips .contenedorTips2 .fotoAnecdota {
   height: auto;
   max-width: 90%;
   -o-object-fit: contain;
   object-fit: contain;
   margin-left: 20px;
   margin-right: 10px;
-}
-
-.mainTips .anecdotas .contenedorTips2 .textotips3 {
-  grid-area: textotips3;
 }
 
 /* ----------------- Estilos Tip fin   ----------------------- */
@@ -1637,8 +1729,8 @@ footer .textF {
     grid-template-rows: 0.5fr;
     gap: 10px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "contenedorTips2"
-      "textotips3 ";
+    grid-template-areas: "textotips3 "
+      "contenedorTips2";
     grid-area: anecdotas;
     margin-bottom: 10px;
     margin-top: 10px;

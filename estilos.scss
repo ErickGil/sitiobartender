@@ -155,8 +155,8 @@ footer {
         color: #fff6a9;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
-        animation: blink 12s infinite;
-        -webkit-animation: blink 12s infinite;
+        animation: blink 1s infinite;
+        -webkit-animation: blink 3s infinite;
         padding: 5px;
     @-webkit-keyframes blink {
 
@@ -767,26 +767,16 @@ footer {
 .mainTips {
     display: grid;
     grid-template-columns: 0.2fr 4.2fr 0.2fr;
-    grid-template-rows: 0.2fr 0.3fr 0.2fr 2.4fr 0.3fr 2.6fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         ". contexto ."
         ". textoTips1 ."
-        ". experiencias ."
         ". exp ."
-        ". textAnecdotas ."
         ". anecdotas .";
     margin-bottom: 50px;
 
-    h3 {
-        font-size: 25px;
-        margin-left: 50px;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        text-decoration: underline;
-        text-shadow: 0 0 5px black;
-    }
 
     .contexto {
         margin-right: auto;
@@ -801,25 +791,28 @@ footer {
 
     .textoTips1 {
         grid-area: textoTips1;
-    }
-
-    .experiencias {
-        margin-right: auto;
-        margin-left: auto;
-        grid-area: experiencias;
-        margin-bottom: 10px;
+        
     }
 
     .exp {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 0.2fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
             "textoTips2 contenedorTips1";
         grid-area: exp;
-
+        align-items: center;
+        margin-bottom: 20px;
+        .textoTips2 {
+            align-items: center;
+            text-align-last: center;
+            .home-title{
+                margin-bottom: 30px;
+                border-bottom: 3px solid #3a2104;
+            }
+        }
         .contenedorTips1 {
             grid-area: contenedorTips1;
             margin-top: 10px;
@@ -831,19 +824,58 @@ footer {
                 margin-left: 20px;
                 margin-right: 10px;
             }
-
-            .textoTips2 {
-                grid-area: textoTips2;
-                margin-top: 20px;
             }
         }
+    
+    .home-title span{
+        position: relative;
+        overflow: hidden;
+        display: block;
+        line-height: 1.2;
     }
-
-    .textAnecdotas {
-        margin-right: auto;
-        margin-left: auto;
-        grid-area: textAnecdotas;
-        margin-bottom: 50px;
+    
+    .home-title span::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(43, 2, 2);
+        animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+        transform: translateX(-101%);
+    }
+    
+    .home-title span::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-color);
+        animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+        transform: translateX(0);
+    }
+    
+    .home-title span:nth-of-type(1)::before,
+    .home-title span:nth-of-type(1)::after{
+        animation-delay: 1s;
+    }
+    
+    .home-title span:nth-of-type(2)::before,
+    .home-title span:nth-of-type(2)::after{
+        animation-delay: 1.5s;
+    }
+    
+    @keyframes a-ltr-after{
+        0% {transform: translateX(-100%)}
+        100% {transform: translateX(101%)}
+    }
+    
+    @keyframes a-ltr-before{
+        0% {transform: translateX(0)}
+        100% {transform: translateX(200%)}
     }
 
     .anecdotas {
@@ -853,10 +885,21 @@ footer {
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "textotips3 contenedorTips2";
+            "contenedorTips2 textotips3";
         grid-area: anecdotas;
         margin-bottom: 10px;
-
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        .textotips3 {
+            grid-area: textotips3;
+            text-align-last: center;
+            .home-title{
+                margin-bottom: 30px;
+                border-bottom: 3px solid #3a2104;
+            }
+        }
+    }
         .contenedorTips2 {
             grid-area: contenedorTips2;
 
@@ -867,11 +910,6 @@ footer {
                 margin-left: 20px;
                 margin-right: 10px;
             }
-
-            .textotips3 {
-                grid-area: textotips3;
-            }
-        }
     }
 }
 
@@ -1496,8 +1534,8 @@ footer {
             gap: 10px 0px;
             grid-auto-flow: row;
             grid-template-areas:
-                "contenedorTips2"
-                "textotips3 ";
+                "textotips3 "
+                "contenedorTips2";
             grid-area: anecdotas;
             margin-bottom: 10px;
             margin-top: 10px;
